@@ -2664,7 +2664,15 @@ body.dark .player__line {
 	margin-bottom: 24px;
 	margin: 0 50px 0 50px;
 }
+.main__head .main__title {
+	margin-bottom: 24px;
+	margin: 0 50px 0 50px;
+}
 @media only screen and (max-width: 767px) {
+	.main__head .main__title {
+		font-size: 32px;
+		margin: 0 37px 0 37px;
+	}
 	.main__title {
 		font-size: 32px;
 		margin: 0 37px 0 37px;
@@ -2685,8 +2693,7 @@ body.dark .player__line {
 		display: block;
 	}
 }
-
-.main .player {
+.main__subtitle .main .player {
 	flex-grow: 1;
 }
 @media only screen and (max-width: 1023px) {
@@ -2727,8 +2734,14 @@ body.dark .player__line {
 	}
 }
 
+.section.description.registered {
+	display: none;
+	border-top: 0px solid white;
+}
+
 .main__subtitle {
 	margin-bottom: 20px;
+	margin-right: 60px;
 }
 @media only screen and (max-width: 1179px) {
 	.main__subtitle {
@@ -3817,7 +3830,6 @@ body.dark .card__link {
 }
 .card__line:first-child {
 	margin-bottom: 2px;
-	
 }
 .card__line:nth-child(2) {
 	margin-top: auto;
