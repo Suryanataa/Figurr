@@ -9,7 +9,6 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6,
 p,
 blockquote,
@@ -137,7 +136,6 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6,
 a,
 span,
@@ -764,7 +762,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 	width: 100%;
 	cursor: auto;
 }
-
 .mfp-ajax-cur {
 	cursor: progress;
 }
@@ -1671,8 +1668,8 @@ body.dark .button-stroke:hover {
 }
 
 .button-circle-work:hover {
-	background: #45B26B;
-	box-shadow: 0 0 0 2px #45B26B inset;
+	background: #45b26b;
+	box-shadow: 0 0 0 2px #45b26b inset;
 }
 
 .button-circle-work .icon {
@@ -1726,11 +1723,37 @@ body.dark .button-circle-stroke:hover {
 	font-family: "DM Sans", sans-serif;
 	font-weight: 700;
 }
-
-.hero {
+.main__title .hero {
 	font-size: 96px;
 	line-height: 1;
 	letter-spacing: -0.02em;
+}
+.main__subtitle.h1 {
+	font-size: 96px;
+}
+.main__subtitle1 {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	color: #23262f;
+	margin-bottom: 25px;
+	margin-top: 30px;
+}
+.main__subtitle2 {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	color: rgba(119, 126, 144, 1);
+	margin-bottom: 45px;
+}
+@media only screen and (max-width: 1024px) {
+	.main__subtitle.h1 {
+		font-size: 64px;
+	}
 }
 
 .h1 {
@@ -1756,7 +1779,6 @@ body.dark .button-circle-stroke:hover {
 	line-height: 1.25;
 	letter-spacing: -0.01em;
 }
-
 [class^="status"] {
 	display: inline-block;
 	padding: 0 8px;
@@ -2680,8 +2702,9 @@ body.dark .player__line {
 .main__stage {
 	margin-bottom: 8px;
 	font-size: 12px;
-	line-height: 1;
+	line-height: 12px;
 	font-weight: 700;
+	text-align: center;
 	text-transform: uppercase;
 	color: #777e90;
 }
@@ -2692,11 +2715,41 @@ body.dark .player__line {
 .main__head .main__title {
 	margin-bottom: 24px;
 	margin: 0 50px 0 50px;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 48px;
+	/* or 120% */
+
+	text-align: center;
+	letter-spacing: -0.01em;
+
+	/* Neutrals/2 */
+
+	color: #23262f;
+}
+.status {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 12px;
+
+	text-transform: capitalize;
+
+	color: #23262f;
 }
 @media only screen and (max-width: 767px) {
 	.main__head .main__title {
-		font-size: 32px;
-		margin: 0 37px 0 37px;
+		margin: 0 5px 0 5px;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+		/* or 120% */
+
+		text-align: center;
+		letter-spacing: -0.01em;
+
+		/* Neutrals/2 */
+
+		color: #23262f;
 	}
 	.main__title {
 		font-size: 32px;
@@ -3778,7 +3831,7 @@ body.dark .field__textarea:focus {
 	left: 8px;
 }
 
-.card__collections{
+.card__collections {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -3836,31 +3889,31 @@ body.dark .card__favorite:hover .icon {
 	fill: #fcfcfd;
 }
 
-.text-card-preview{
+.text-card-preview {
 	position: absolute;
 	left: 55%;
 	bottom: 16px;
 	min-width: 140px;
 	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%,50%);
+	transform: translateX(-50%, 50%);
 }
 
-.text-card-right{
+.text-card-right {
 	position: absolute;
 	left: 200px;
 	bottom: 0px;
 	min-width: 45px;
 	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%,-50%);
+	transform: translateX(-50%, -50%);
 }
 
-.icon-card-right{
+.icon-card-right {
 	position: absolute;
 	left: 190px;
 	bottom: 0px;
 	/* min-width: 140px; */
 	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%,-50%);
+	transform: translateX(-50%, -50%);
 }
 
 .card__button {
@@ -8078,32 +8131,28 @@ body.dark .followers__item {
 	}
 }
 
-.followers__name{
-	
+.followers__name {
 }
-@media only screen and(max-width: 1179px){
-	.followers__name{
-		
+@media only screen and(max-width: 1179px) {
+	.followers__name {
 	}
 }
-@media only screen and(max-width: 767px){
-	.followers__name{
+@media only screen and(max-width: 767px) {
+	.followers__name {
 		margin-right: 0;
 		display: block !important;
 	}
 }
 
-.container-details{
+.container-details {
 	display: flex;
 }
-@media only screen and(max-width: 1179px){
-	.container-details{
-		
+@media only screen and(max-width: 1179px) {
+	.container-details {
 	}
 }
-@media only screen and(max-width: 767px){
-	.container-details{
-		
+@media only screen and(max-width: 767px) {
+	.container-details {
 	}
 }
 
