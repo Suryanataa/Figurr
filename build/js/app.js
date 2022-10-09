@@ -122,8 +122,61 @@ $(document).ready(function () {
         infinite: true
       }
     }]
-  }); // slider collections
-
+  });
+  $('.js-slider-hots').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    // prevArrow: prevArrow,
+    // nextArrow: nextArrow,
+    dots: false,
+    speed: 500,
+    responsive: [{
+      breakpoint: 1179,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        infinite: true
+      }
+    }]
+  }); 
+  $('.js-slider-more').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    // prevArrow: prevArrow,
+    nextArrow: nextArrow,
+    dots: false,
+    speed: 500,
+    responsive: [{
+      breakpoint: 1179,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        infinite: true
+      }
+    }]
+  }); 
+  
+  // slider collections
   $('.js-slider-collections').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
