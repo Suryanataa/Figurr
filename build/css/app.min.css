@@ -1693,6 +1693,66 @@ body.dark .button-stroke:hover {
 	fill: #fcfcfd;
 }
 
+.button-position-close{
+	position: absolute;
+	top: 6%;
+	left: 90%;
+}
+.button-position-file{
+	position: absolute;
+	top: 11%;
+	left: 90%;
+}
+.button-position-like{
+	position: absolute;
+	top: 16%;
+	left: 90%;
+}
+.button-position-more{
+	position: absolute;
+	bottom: 75%;
+	left: 90%;
+}
+
+
+@media (max-width:1023px){
+	.button-position-close{
+		position: absolute;
+		top: 11%;
+		left: 90%;
+	}
+	.button-position-file{
+		position: absolute;
+		top: 18%;
+		left: 90%;
+	}
+	.button-position-like{
+		position: absolute;
+		top: 25%;
+		left: 90%;
+	}
+	.button-position-more{
+		position: absolute;
+		bottom: 62.5%;
+		left: 90%;
+	}
+	.actions__body{
+		position: absolute;
+		right: 0;
+		bottom: calc(10% + 12px);
+		width: 208px;
+		padding: 16px 16px 20px;
+		border-radius: 12px;
+		background: #fcfcfd;
+		box-shadow: 0px 16px 64px -16px rgba(31, 47, 70, 0.3);
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+		transition: all 0.2s;
+	}
+}
+
 .button-circle-stroke {
 	flex: 0 0 48px;
 	width: 48px;
@@ -1726,6 +1786,64 @@ body.dark .button-circle-stroke:hover {
 	width: 40px;
 	height: 40px;
 }
+
+.button-circle-close {
+	/* position: absolute; */
+	flex: 0 0 48px;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border-radius: 50%;
+	/* box-shadow: 0 0 0 2px #e6e8ec inset; */
+	background: #23262F;
+	/* transition: all 0.2s; */
+}
+.button-circle-close:hover {
+	/* position: absolute; */
+	flex: 0 0 48px;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border-radius: 50%;
+	/* box-shadow: 0 0 0 2px #e6e8ec inset; */
+	background: #23262F;
+	/* transition: all 0.2s; */
+}
+
+
+/* .button-circle-stroke-item {
+	flex: 0 0 48px;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #e6e8ec inset;
+	background: transparent;
+	transition: all 0.2s;
+}
+.button-circle-stroke-item .icon {
+	fill: #777e90;
+	transition: fill 0.2s;
+}
+.button-circle-stroke-item:hover {
+	background: #3772ff;
+	box-shadow: 0 0 0 2px #3772ff inset;
+}
+.button-circle-stroke-item:hover .icon {
+	fill: #fcfcfd;
+}
+body.dark .button-circle-stroke-item {
+	box-shadow: 0 0 0 2px #353945 inset;
+}
+body.dark .button-circle-stroke-item:hover {
+	background: #353945;
+}
+
+.button-circle-stroke-item.button-small {
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+} */
 
 .hero,
 .h1,
@@ -9102,7 +9220,7 @@ body.dark .options__list {
 .options__button_favorite:before {
 	content: "";
 	position: absolute;
-	top: 51%;
+	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -9120,6 +9238,7 @@ body.dark .options__list {
 
 .options__button_favorite.active .icon {
 	opacity: 0;
+	
 }
 
 .options__button_favorite.active:before {
@@ -9231,7 +9350,7 @@ body.dark .options__direction span:hover .icon {
 .actions__body {
 	position: absolute;
 	right: 0;
-	bottom: calc(100% + 12px);
+	bottom: calc(59% + 12px);
 	width: 208px;
 	padding: 16px 16px 20px;
 	border-radius: 12px;
