@@ -4450,10 +4450,25 @@ body.dark .collections__user {
 		display: none;
 	}
 }
+.discover__navs {
+	position: absolute;
+	top: 10px;
+	left: 75%;
+	display: flex;
+	justify-content: center;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+@media only screen and (max-width: 1023px) {
+	.discover__navs {
+		display: none;
+	}
+}
 
 .discover__link {
 	margin: 0 6px;
 	padding: 6px 12px;
+	white-space: nowrap;
 	border-radius: 14px;
 	background: none;
 	font-family: "DM Sans", sans-serif;
@@ -4966,7 +4981,7 @@ body.dark .subscription__input:focus {
 	top: 8px;
 	right: 8px;
 	bottom: 8px;
-	width: 32px;
+	width: 90px;
 	height: 32px;
 	border-radius: 90px;
 	background: #3772ff;

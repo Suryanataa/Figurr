@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Figyer</title>
+		<title>Figurr</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 		<meta name="format-detection" content="telephone=no" />
@@ -43,7 +43,7 @@
 		</script>
 	</head>
 	<body>
-		<script>
+		<!-- <script>
 			console.log(localStorage.getItem("darkMode"));
 			if (localStorage.getItem("darkMode") === "on") {
 				document.body.classList.add("dark");
@@ -51,7 +51,7 @@
 					document.querySelector(".js-theme input").checked = true;
 				});
 			}
-		</script>
+		</script> -->
 		<!-- outer-->
 		<div class="outer">
 			<!-- header-->
@@ -178,939 +178,115 @@
 				</div>
 			</header>
 
-			<div class="outer__inner">
-				<div class="section main">
-					<div class="main__center center">
-						<div class="main__head">
-							<div class="main__stage">everyone has a time, every time has a person</div>
-							<div class="main__title" style="padding-bottom: 25px">Create, Explore and Collect The Art Portrait</div>
-							<a class="button-stroke main__button" href="search01.html">Start your search</a>
+			<div class="section discover">
+				<div class="discover__center center">
+                    <div class="catalog__top">
+                        <div class="catalog__title">Type your keywords</div>
+                        <form class="catalog__search">
+                          <input class="catalog__input" type="text" name="search" placeholder="Search..." required>
+                          <button class="catalog__result">
+                            <svg class="icon icon-search">
+                              <use xlink:href="#icon-search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div>
+					<!-- <h3 class="discover__title h3">Discover</h3> -->
+					<div class="discover__top">
+						<select class="select">
+							<option>World Wide</option>
+							<option>Asia</option>
+						</select>
+						<div class="discover__navs">
+							<a class="discover__link active" href="#">All</a><a class="discover__link" href="#">Fine Art</a><a class="discover__link" href="#">Comic</a><a class="discover__link" href="#">Commission</a
+							><a class="discover__link" href="#">Editorial</a><a href="#" class="discover__link">Video</a>
 						</div>
-						<div class="main__wrapper">
-							<div class="main__slider js-slider-main">
-								<div class="main__slide">
-									<div class="main__row">
-										<div class="player">
-											<div class="player__preview"><img srcset="./img/Figyer Thumbsnail/Mask group@2x.png 2x" src="./img/Figyer Thumbsnail/Mask group.png" alt="illustration" /></div>
-										</div>
-										<div class="main__details">
-											<div class="main__subtitle h1">The creator portrait network®</div>
-											<div class="main__subtitle1">| Sketch | Painting | Water Color | Vector | Grafiti | Mural | Sticker | 3D | Mix Media |</div>
-											<div class="main__subtitle2">for all of your portrait work, Display your talent, create authentic portrait art, share, explore, and be an inspiration.</div>
-											<div class="main__btns"><a class="button main__button js-popup-open">Okay, I've got it!</a></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section-pb selection">
-					<div class="selection__center center">
-						<div class="selection__row">
-							<div class="selection__col">
-								<a class="selection__card" href="item.html">
-									<div class="selection__preview">
-										<img
-											srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/donna e rose-Natali Altudova@2x.png 2x"
-											src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/donna e rose-Natali Altudova.png"
-											alt="Selection"
-											width="448"
-											height="432"
-											style="object-fit: cover"
-										/>
-									</div>
-								</a>
-
-								<div class="selection__head">
-									<a class="selection__card" href="item.html">
-										<div class="selection__line">
-											<div class="selection__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
-											<div class="selection__description">
-												<div class="selection__title">donna e rose</div>
-												<div class="selection__counter">Natali Altudova</div>
-											</div>
-										</div>
-									</a>
-									<div class="selection__box">
-										<button class="button-stroke button-small user__button js-user-follow active"><span>Following</span><span>Follow</span></button>
-									</div>
-								</div>
-							</div>
-							<div class="selection__col">
-								<div class="selection__item">
-									<a href="item.html">
-										<div class="selection__preview">
-											<img
-												srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Landsknecht - Denise Zilber@2x.png 2x"
-												src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Landsknecht - Denise Zilber.png"
-												alt="Selection"
-												style="object-fit: cover"
-												width="160"
-												height="148"
-											/>
-										</div>
-									</a>
-									<div class="selection__description">
-										<div class="selection__title">Landsknecht</div>
-										<div class="selection__line">
-											<div class="selection__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar" /></div>
-											<div class="selection__content">Denise Zilber</div>
-										</div>
-										<button class="button-stroke button-small user__button js-user-follow active"><span>Following</span><span>Follow</span></button>
-									</div>
-								</div>
-								<div class="selection__item">
-									<a href="item.html">
-										<div class="selection__preview">
-											<img
-												srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Landsknecht - Denise Zilber@2x.png 2x"
-												src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Illustration 2022- Mohammed Sajid.png"
-												alt="Selection"
-												style="object-fit: cover"
-												width="160"
-												height="148"
-											/>
-										</div>
-									</a>
-									<div class="selection__description">
-										<div class="selection__title">Illustration 2022</div>
-										<div class="selection__line">
-											<div class="selection__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar" /></div>
-											<div class="selection__content">Mohammed Sajid</div>
-										</div>
-										<button class="button-stroke button-small user__button js-user-follow active"><span>Following</span><span>Follow</span></button>
-									</div>
-								</div>
-								<div class="selection__item">
-									<a href="item.html">
-										<div class="selection__preview">
-											<img
-												srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Landsknecht - Denise Zilber@2x.png 2x"
-												src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Potrait Illustration - Ruslan Sandanov.png"
-												alt="Selection"
-												style="object-fit: cover"
-												width="160"
-												height="148"
-											/>
-										</div>
-									</a>
-									<div class="selection__description">
-										<div class="selection__title">Potrait Illustration</div>
-										<div class="selection__line">
-											<div class="selection__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar" /></div>
-											<div class="selection__content">Ruslan Sandanov</div>
-										</div>
-										<button class="button-stroke button-small user__button js-user-follow active"><span>Following</span><span>Follow</span></button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="selection__sidebar">
-							<div class="selection__info">Latest upload from creators <span role="img" aria-label="fire">🔥</span></div>
-							<div class="selection__list">
-								<div class="selection__user">
-									<div class="selection__avatar">
-										<img src="img/content/avatar-1.jpg" alt="Avatar" />
-										<div class="selection__number">6</div>
-									</div>
-									<div class="selection__description">
-										<div class="selection__name" style="font-weight: 600">Payton Harris</div>
-										<div class="selection__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">IDN</span> 25.3k followers</div>
-									</div>
-								</div>
-								<div class="selection__user">
-									<div class="selection__avatar">
-										<img src="img/content/avatar-2.jpg" alt="Avatar" />
-										<div class="selection__number">2</div>
-									</div>
-									<div class="selection__description">
-										<div class="selection__name" style="font-weight: 600">Anita Bins</div>
-										<div class="selection__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">IDN</span> 25.3k followers</div>
-									</div>
-								</div>
-								<div class="selection__user">
-									<div class="selection__avatar">
-										<img src="img/content/avatar-3.jpg" alt="Avatar" />
-										<div class="selection__number">3</div>
-									</div>
-									<div class="selection__description">
-										<div class="selection__name" style="font-weight: 600">Joana Wuckert</div>
-										<div class="selection__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">IDN</span> 25.3k followers</div>
-									</div>
-								</div>
-								<div class="selection__user">
-									<div class="selection__avatar">
-										<img src="img/content/avatar-4.jpg" alt="Avatar" />
-										<div class="selection__number">4</div>
-									</div>
-									<div class="selection__description">
-										<div class="selection__name" style="font-weight: 600">Lorena Ledner</div>
-										<div class="selection__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">IDN</span> 25.3k followers</div>
-									</div>
-								</div>
-							</div>
-							<a class="button-stroke button-small selection__button" href="search01.html"
-								><span>Discover more</span>
-								<svg class="icon icon-arrow-next">
-									<use xlink:href="#icon-arrow-next"></use></svg></a>
-						</div>
-					</div>
-				</div>
-				<div class="section-bg popular">
-					<div class="popular__center center">
-						<div class="popular__top">
-							<div class="popular__box">
-								<div class="popular__stage">Popular Creators</div>
-								<select class="select-empty">
-									<option>World Wide</option>
-									<option>Buyers</option>
-								</select>
-							</div>
-							<div class="field">
-								<div class="field__label">timeframe</div>
-								<div class="field__wrap">
-									<select class="select">
-										<option>Today</option>
-										<option>Morning</option>
-										<option>Dinner</option>
-										<option>Evening</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="popular__wrapper">
-							<div class="popular__slider js-slider-popular">
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #3772ff">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#1</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-5.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Alexander Tynyanyy</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">1.62M</span> followers</div>
-										</div>
-									</div>
-								</div>
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #9757d7">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#2</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-6.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Carmen Loe</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">1.32M</span> followers</div>
-										</div>
-									</div>
-								</div>
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #45b26b">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#3</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-7.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Draymond Hill</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">1.3M</span> followers</div>
-										</div>
-									</div>
-								</div>
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #23262f">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#4</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-8.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Marry Chain</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">63K</span> followers</div>
-										</div>
-									</div>
-								</div>
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #777e90">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#5</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-9.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Julie Namco</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">5.63K</span> followers</div>
-										</div>
-									</div>
-								</div>
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #3772ff">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#1</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-5.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Alexander Tynyanyy</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">1.62M</span> followers</div>
-										</div>
-									</div>
-								</div>
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #9757d7">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#2</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-6.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Carmen Loe</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">1.32M</span> followers</div>
-										</div>
-									</div>
-								</div>
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #45b26b">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#3</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-7.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Draymond Hill</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">1.3M</span> followers</div>
-										</div>
-									</div>
-								</div>
-								<div class="popular__slide">
-									<div class="popular__item">
-										<div class="popular__head">
-											<div class="popular__rating" style="background-color: #23262f">
-												<div class="popular__icon"><img src="img/content/lightning.svg" alt="Rating" /></div>
-												<div class="popular__number">#4</div>
-											</div>
-											<div class="popular__control">
-												<button class="popular__button popular__add">
-													<svg class="icon icon-add-square">
-														<use xlink:href="#icon-add-square"></use>
-													</svg>
-													<svg class="icon icon-minus-square">
-														<use xlink:href="#icon-minus-square"></use>
-													</svg></button
-												><a class="popular__button" href="profile.html">
-													<svg class="icon icon-arrow-expand">
-														<use xlink:href="#icon-arrow-expand"></use></svg></a>
-											</div>
-										</div>
-										<div class="popular__body">
-											<div class="popular__avatar">
-												<div class="popular__preview"><img src="img/content/avatar-8.jpg" alt="Avatar" /></div>
-												<div class="popular__reward"><img src="./img/Figyer Thumbsnail/reward.svg" alt="Reward" /></div>
-											</div>
-											<div class="popular__name">Marry Chain</div>
-											<div class="popular__followers" style="font-weight: 400; color: rgba(119, 126, 144, 1)"><span style="font-weight: 600; color: rgba(53, 57, 69, 1)">63K</span> followers</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section hot">
-					<div class="hot__center center">
-						<div class="hot__wrapper">
-							<h3 class="hot__title h3">Hot Figurr</h3>
-							<div class="hot__inner">
-								<div class="hot__slider js-slider-hot">
-									<div class="hot__slide">
-										<div class="card">
-											<div class="card__preview">
-												<img
-													srcset="./img/Figyer Thumbsnail/The Artist/Shahul Hameed/Screenshot 2022-09-17 at 11-43-23 Portrait Illustration Projects Photos videos logos illustrations and branding on Behance@2x.png 2x"
-													src="./img/Figyer Thumbsnail/The Artist/Shahul Hameed/Screenshot 2022-09-17 at 11-43-23 Portrait Illustration Projects Photos videos logos illustrations and branding on Behance.png"
-													alt="Card preview"
-												/>
-												<div class="card__control">
-													<button class="card__favorite">
-														<svg class="icon icon-heart">
-															<use xlink:href="#icon-heart"></use>
-														</svg>
-													</button>
-												</div>
-											</div>
-											<a class="card__link" href="item.html">
-												<div class="card__body">
-													<div class="card__line">
-														<div class="card__title">Painting</div>
-														<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
-											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
-                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="font-size: 12px;margin-left:2px;">123</p>
-													</div>
-													<div class="card__line">
-														<div class="card__users">
-															<p style="font-size: 12px; font-weight: 400">Shahul Ahmeed</p>
-														</div>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="hot__slide">
-										<div class="card">
-											<div class="card__preview">
-												<img srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Serene - Alhussain Shaker@2x.png 2x" src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Serene - Alhussain Shaker.png" />
-												<div class="card__control">
-													<button class="card__favorite">
-														<svg class="icon icon-heart">
-															<use xlink:href="#icon-heart"></use>
-														</svg>
-													</button>
-												</div>
-											</div>
-											<a class="card__link" href="item.html">
-												<div class="card__body">
-													<div class="card__line">
-														<div class="card__title">Serene</div>
-														<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
-											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
-                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="font-size: 12px;margin-left:2px;">123</p>
-													</div>
-													<div class="card__line">
-														<div class="card__users">
-															<p style="font-size: 12px; font-weight: 400">Alhussain Shaker</p>
-														</div>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="hot__slide">
-										<div class="card">
-											<div class="card__preview">
-												<img srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Forever - Suraj Roy@2x.png 2x" src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Forever - Suraj Roy.png" alt="Card preview" />
-												<div class="card__control">
-													<button class="card__favorite">
-														<svg class="icon icon-heart">
-															<use xlink:href="#icon-heart"></use>
-														</svg>
-													</button>
-												</div>
-											</div>
-											<a class="card__link" href="item.html">
-												<div class="card__body">
-													<div class="card__line">
-														<div class="card__title">Forever</div>
-														<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
-											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
-                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="font-size: 12px;margin-left:2px;">123</p>
-													</div>
-													<div class="card__line">
-														<div class="card__users">
-															<p style="font-size: 12px; font-weight: 400">Suraj Roy</p>
-														</div>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="hot__slide">
-										<div class="card">
-											<div class="card__preview">
-												<img
-													srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Illustration Collection II - Uran Duo@2x.png 2x"
-													src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Illustration Collection II - Uran Duo.png"
-													alt="Card preview"
-												/>
-												<div class="card__control">
-													<button class="card__favorite">
-														<svg class="icon icon-heart">
-															<use xlink:href="#icon-heart"></use>
-														</svg>
-													</button>
-												</div>
-											</div>
-											<a class="card__link" href="item.html">
-												<div class="card__body">
-													<div class="card__line">
-														<div class="card__title">Illustration Collection II</div>
-														<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
-											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
-                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="font-size: 12px;margin-left:2px;">123</p>
-													</div>
-													<div class="card__line">
-														<div class="card__users">
-															<p style="font-size: 12px; font-weight: 400">Uran Duo</p>
-														</div>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="hot__slide">
-										<div class="card">
-											<div class="card__preview">
-												<img srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Serene - Alhussain Shaker@2x.png 2x" src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Serene - Alhussain Shaker.png" />
-												<div class="card__control">
-													<button class="card__favorite">
-														<svg class="icon icon-heart">
-															<use xlink:href="#icon-heart"></use>
-														</svg>
-													</button>
-												</div>
-											</div>
-											<a class="card__link" href="item.html">
-												<div class="card__body">
-													<div class="card__line">
-														<div class="card__title">Serene</div>
-														<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
-											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
-                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="font-size: 12px;margin-left:2px;">123</p>
-													</div>
-													<div class="card__line">
-														<div class="card__users">
-															<p style="font-size: 12px; font-weight: 400">Alhussain Shaker</p>
-														</div>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="hot__slide">
-										<div class="card">
-											<div class="card__preview">
-												<img
-													srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Illustration Collection II - Uran Duo@2x.png 2x"
-													src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Illustration Collection II - Uran Duo.png"
-													alt="Card preview"
-												/>
-												<div class="card__control">
-													<button class="card__favorite">
-														<svg class="icon icon-heart">
-															<use xlink:href="#icon-heart"></use>
-														</svg>
-													</button>
-												</div>
-											</div>
-											<a class="card__link" href="item.html">
-												<div class="card__body">
-													<div class="card__line">
-														<div class="card__title">Illustration Collection II</div>
-														<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
-											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
-                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="font-size: 12px;margin-left:2px;">123</p>
-													</div>
-													<div class="card__line">
-														<div class="card__users">
-															<p style="font-size: 12px; font-weight: 400">Uran Duo</p>
-														</div>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="hot__slide">
-										<div class="card">
-											<div class="card__preview">
-												<img srcset="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Forever - Suraj Roy@2x.png 2x" src="./img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Forever - Suraj Roy.png" />
-												<div class="card__control">
-													<button class="card__favorite">
-														<svg class="icon icon-heart">
-															<use xlink:href="#icon-heart"></use>
-														</svg>
-													</button>
-												</div>
-											</div>
-											<a class="card__link" href="item.html">
-												<div class="card__body">
-													<div class="card__line">
-														<div class="card__title">IForever</div>
-														<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
-											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
-                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
-                                            </svg>                                                
-											<p style="font-size: 12px;margin-left:2px;">123</p>
-													</div>
-													<div class="card__line">
-														<div class="card__users">
-															<p style="font-size: 12px; font-weight: 400">Suraj Roy</p>
-														</div>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section-bg collections">
-					<div class="collections__center center">
-						<div class="collections__wrapper">
-							<h3 class="collections__title h3">Hot collections</h3>
-							<div class="collections__inner">
-								<div class="collections__slider js-slider-collections">
-									<a class="collections__item" href="profile.html">
-										<div class="collections__gallery">
-											<div class="collections__preview"><img src="./img/Figyer Thumbsnail/The Artist/Berkay Doglar/Rolling Stone/5.png" style="object-fit: cover" alt="Collections" width="352" height="240" /></div>
-											<div class="collections__preview"><img src="./img/Figyer Thumbsnail/The Artist/Berkay Doglar/Jhon.png" style="object-fit: cover" alt="Collections" width="112" height="75" /></div>
-											<div class="collections__preview"><img src="./img/Figyer Thumbsnail/The Artist/Berkay Doglar/Loki.png" style="object-fit: cover" alt="Collections" width="112" height="75" /></div>
-											<div class="collections__preview"><img src="./img/Figyer Thumbsnail/The Artist/Berkay Doglar/Gambit.png" style="object-fit: cover" alt="Collections" width="112" height="75" /></div>
-										</div>
-										<div class="collections__line">
-											<div class="collections__user">
-												<div class="collections__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
-												<div class="collections__author">By <span>Berkay Daglar</span></div>
-											</div>
-											<div class="status collections__counter"><span>28 Projects</span></div>
-										</div></a
-									><a class="collections__item" href="profile.html">
-										<div class="collections__gallery">
-											<div class="collections__preview">
-												<img
-													src="./img/Figyer Thumbsnail/The Artist/Shahul Hameed/Screenshot 2022-09-17 at 11-41-54 Portrait Illustration Projects Photos videos logos illustrations and branding on Behance.png"
-													style="object-fit: cover"
-													alt="Collections"
-													width="352"
-													height="240"
-												/>
-											</div>
-											<div class="collections__preview">
-												<img src="./img/Figyer Thumbsnail/The Artist/Shahul Hameed/Screenshot 2022-09-17 at 12-08-51 Shahul Hameed on Behance.png" style="object-fit: cover" alt="Collections" width="112" height="75" />
-											</div>
-											<div class="collections__preview">
-												<img
-													src="./img/Figyer Thumbsnail/The Artist/Shahul Hameed/Screenshot 2022-09-17 at 11-43-04 Portrait Illustration Projects Photos videos logos illustrations and branding on Behance.png"
-													style="object-fit: cover"
-													alt="Collections"
-													width="112"
-													height="75"
-												/>
-											</div>
-											<div class="collections__preview">
-												<img
-													src="./img/Figyer Thumbsnail/The Artist/Shahul Hameed/Screenshot 2022-09-17 at 11-43-23 Portrait Illustration Projects Photos videos logos illustrations and branding on Behance.png"
-													style="object-fit: cover"
-													alt="Collections"
-													width="112"
-													height="75"
-												/>
-											</div>
-										</div>
-										<div class="collections__line">
-											<div class="collections__user">
-												<div class="collections__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar" /></div>
-												<div class="collections__author">By <span>SHahul hameed</span></div>
-											</div>
-											<div class="status collections__counter"><span>36 Projects</span></div>
-										</div></a
-									><a class="collections__item" href="profile.html">
-										<div class="collections__gallery">
-											<div class="collections__preview">
-												<img src="./img/Figyer Thumbsnail/The Artist/Ruijun Yu/1.png" style="object-fit: cover" alt="Collections" width="352" height="240" />
-											</div>
-											<div class="collections__preview">
-												<img src="./img/Figyer Thumbsnail/The Artist/Ruijun Yu/4.png" style="object-fit: cover" alt="Collections" width="112" height="75" />
-											</div>
-											<div class="collections__preview">
-												<img src="./img/Figyer Thumbsnail/The Artist/Ruijun Yu/3.png" style="object-fit: cover" alt="Collections" width="112" height="75" />
-											</div>
-											<div class="collections__preview">
-												<img src="./img/Figyer Thumbsnail/The Artist/Ruijun Yu/5.png" style="object-fit: cover" alt="Collections" width="112" height="75" />
-											</div>
-										</div>
-										<div class="collections__line">
-											<div class="collections__user">
-												<div class="collections__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar" /></div>
-												<div class="collections__author">By <span>Ruiju Yu</span></div>
-											</div>
-											<div class="status collections__counter"><span>28 Projects</span></div>
-										</div></a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section discover">
-					<div class="discover__center center">
-						<h3 class="discover__title h3">Discover</h3>
-						<div class="discover__top">
+						<div class="tablet-show">
 							<select class="select">
-								<option>Recently added</option>
-								<option>Long added</option>
+								<option>All</option>
+								<option>Art</option>
+								<option>Comic</option>
+								<option>Commission</option>
+								<option>Editorial</option>
+								<option>Video</option>
 							</select>
-							<div class="discover__nav">
-								<a class="discover__link active" href="#">All</a><a class="discover__link" href="#">Art</a><a class="discover__link" href="#">Comic</a><a class="discover__link" href="#">Commission</a
-								><a class="discover__link" href="#">Editorial</a>
-							</div>
-							<div class="tablet-show">
-								<select class="select">
-									<option>All</option>
-									<option>Art</option>
-									<option>Comic</option>
-									<option>Commission</option>
-									<option>Editorial</option>
-									<option>Trend</option>
-								</select>
-							</div>
-							<button class="discover__filter">
-								<div class="discover__text">Filter</div>
-								<div class="discover__icon">
-									<svg class="icon icon-filter">
-										<use xlink:href="#icon-filter"></use>
-									</svg>
-									<svg class="icon icon-close">
-										<use xlink:href="#icon-close"></use>
-									</svg>
-								</div>
-							</button>
 						</div>
-						<div class="discover__filters">
-							<div class="discover__sorting">
-								<div class="discover__cell">
-									<div class="field">
-										<div class="field__label">Tags</div>
-										<div class="field__wrap">
-											<input type="text" class="input__text" />
-										</div>
+						<!-- <button class="discover__filter">
+							<div class="discover__text">Filter</div>
+							<div class="discover__icon">
+								<svg class="icon icon-filter">
+									<use xlink:href="#icon-filter"></use>
+								</svg>
+								<svg class="icon icon-close">
+									<use xlink:href="#icon-close"></use>
+								</svg>
+							</div>
+						</button> -->
+					</div>
+					<div class="discover__filterss" style="margin-bottom: 50px;">
+						<div class="discover__sorting">
+							<div class="discover__cell">
+								<div class="field">
+									<div class="field__label">Location</div>
+									<div class="field__wrap">
+										<select class="select">
+											<option>Indonesia</option>
+											<option>Japan</option>
+											<option>Singapore</option>
+										</select>
 									</div>
 								</div>
-								<div class="discover__cell">
-									<div class="field">
-										<div class="field__label">Short</div>
-										<div class="field__wrap">
-											<select class="select">
-												<option>Projects</option>
-												<option>Least liked</option>
-												<option>Most Liked</option>
-											</select>
-										</div>
+							</div>
+							<div class="discover__cell">
+								<div class="field">
+									<div class="field__label">Short</div>
+									<div class="field__wrap">
+										<select class="select">
+											<option>Projects</option>
+											<option>Least liked</option>
+											<option>Most Liked</option>
+										</select>
 									</div>
 								</div>
-								<div class="discover__cell">
-									<div class="field">
-										<div class="field__label">Type</div>
-										<div class="field__wrap">
-											<select class="select">
-												<option>Verified only</option>
-												<option>All</option>
-												<option>Most liked</option>
-											</select>
-										</div>
+							</div>
+							<div class="discover__cell">
+								<div class="field">
+									<div class="field__label">Type</div>
+									<div class="field__wrap">
+										<select class="select">
+											<option>Verified only</option>
+											<option>All</option>
+											<option>Most liked</option>
+										</select>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="discover__list">
-							<div class="discover__slider js-slider-discover js-slider-resize">
-								<div class="card">
-									<div class="card__preview">
-										<img srcset="img/Figyer Thumbsnail/The Artist/Arunas Kacinkas/Trying Things@2x.png 2x" src="img/Figyer Thumbsnail/The Artist/Arunas Kacinskas/Trying Things.png" alt="Card preview" />
-										<div class="card__control">
-											<!-- <div class="status-green card__category">purchasing !</div> -->
-											<button class="card__favorite">
-												<svg class="icon icon-heart">
-													<use xlink:href="#icon-heart"></use>
-												</svg>
-											</button>
-											<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
-								  <svg class="icon icon-scatter-up">
-									<use xlink:href="#icon-scatter-up"></use>
-								  </svg></a> -->
-										</div>
+					</div>
+					<div class="discover__list">
+						<div class="discover__slider js-slider-discover js-slider-resize">
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/Figyer Thumbsnail/The Artist/Arunas Kacinkas/Trying Things@2x.png 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/9 2 2022 - James Fenner.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
 									</div>
-									<a class="card__link" href="item.html">
-										<div class="card__body">
-											<div class="card__line">
-												<div class="card__title">TRYING THINGS</div>
-												<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">9 2 2022</div>
+											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-heart.png" alt=""/> -->
+                                            <svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
@@ -1120,49 +296,49 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="font-size: 12px;margin-left:2px;">123</p>
-												<!-- <div class="card__price">2.45 ETH</div> -->
-											</div>
-											<div class="card__line">
-												<div class="card__users">
-													<p style="font-size: 12px; font-weight: 400">Arunas Kacinskas</p>
-													<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
-												</div>
-												<!-- <div class="card__counter">3 in stock</div> -->
-											</div>
+											<!-- <div class="card__price">2.45 ETH</div> -->
 										</div>
-										<!-- <div class="card__foot">
-								<div class="card__status">
-								  <svg class="icon icon-candlesticks-up">
-									<use xlink:href="#icon-candlesticks-up"></use>
-								  </svg>Highest bid <span>0.001 ETH</span>
-								</div>
-								<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
-							  </div> -->
-									</a>
-								</div>
-								<div class="card">
-									<div class="card__preview">
-										<img srcset="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Retratos personalizadosen 3D - Nathalia Escalona.png" alt="Card preview" />
-										<div class="card__control">
-											<!-- <div class="status-green card__category">purchasing !</div> -->
-											<button class="card__favorite">
-												<svg class="icon icon-heart">
-													<use xlink:href="#icon-heart"></use>
-												</svg>
-											</button>
-											<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
-								  <svg class="icon icon-scatter-up">
-									<use xlink:href="#icon-scatter-up"></use>
-								  </svg></a> -->
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">James Fenner</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
 										</div>
 									</div>
-									<a class="card__link" href="item.html">
-										<div class="card__body">
-											<div class="card__line">
-												<div class="card__title">Retratos personalizad...</div>
-												<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Cyber Thugz - Eduardo Leon.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Cyber Thugz</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
@@ -1172,49 +348,49 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="font-size: 12px;margin-left:2px;">123</p>
-												<!-- <div class="card__price">2.45 ETH</div> -->
-											</div>
-											<div class="card__line">
-												<div class="card__users">
-													<p style="font-size: 12px; font-weight: 400">Nathalia Escalona</p>
-													<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
-												</div>
-												<!-- <div class="card__counter">3 in stock</div> -->
-											</div>
+											<!-- <div class="card__price">2.45 ETH</div> -->
 										</div>
-										<!-- <div class="card__foot">
-								<div class="card__status">
-								  <svg class="icon icon-candlesticks-up">
-									<use xlink:href="#icon-candlesticks-up"></use>
-								  </svg>Highest bid <span>0.001 ETH</span>
-								</div>
-								<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
-							  </div> -->
-									</a>
-								</div>
-								<div class="card">
-									<div class="card__preview">
-										<img srcset="img/content/card-pic-3@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Forever - Suraj Roy.png" alt="Card preview" />
-										<div class="card__control">
-											<!-- <div class="status-green card__category">purchasing !</div> -->
-											<button class="card__favorite">
-												<svg class="icon icon-heart">
-													<use xlink:href="#icon-heart"></use>
-												</svg>
-											</button>
-											<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
-								  <svg class="icon icon-scatter-up">
-									<use xlink:href="#icon-scatter-up"></use>
-								  </svg></a> -->
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Eduardo Leon</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
 										</div>
 									</div>
-									<a class="card__link" href="item.html">
-										<div class="card__body">
-											<div class="card__line">
-												<div class="card__title">Forever</div>
-												<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-3@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Archetypes _ illustration series - Arnas Augutis.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Archetypes | illust...</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
@@ -1224,53 +400,53 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="font-size: 12px;margin-left:2px;">123</p>
-												<!-- <div class="card__price">2.45 ETH</div> -->
-											</div>
-											<div class="card__line">
-												<div class="card__users">
-													<p style="font-size: 12px; font-weight: 400">Suraj Roy</p>
-													<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
-												</div>
-												<!-- <div class="card__counter">3 in stock</div> -->
-											</div>
+											<!-- <div class="card__price">2.45 ETH</div> -->
 										</div>
-										<!-- <div class="card__foot">
-								<div class="card__status">
-								  <svg class="icon icon-candlesticks-up">
-									<use xlink:href="#icon-candlesticks-up"></use>
-								  </svg>Highest bid <span>0.001 ETH</span>
-								</div>
-								<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
-							  </div> -->
-									</a>
-								</div>
-								<div class="card">
-									<div class="card__preview">
-										<img
-											srcset="img/content/card-pic-4@2x.jpg 2x"
-											src="img/Figyer Thumbsnail/The Artist/Shahul Hameed/Screenshot 2022-09-17 at 11-41-54 Portrait Illustration Projects Photos videos logos illustrations and branding on Behance.png"
-											alt="Card preview"
-										/>
-										<div class="card__control">
-											<!-- <div class="status-green card__category">purchasing !</div> -->
-											<button class="card__favorite">
-												<svg class="icon icon-heart">
-													<use xlink:href="#icon-heart"></use>
-												</svg>
-											</button>
-											<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
-								  <svg class="icon icon-scatter-up">
-									<use xlink:href="#icon-scatter-up"></use>
-								  </svg></a> -->
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Arnas Augutis</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
 										</div>
 									</div>
-									<a class="card__link" href="item.html">
-										<div class="card__body">
-											<div class="card__line">
-												<div class="card__title">Illustration</div>
-												<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img
+										srcset="img/content/card-pic-4@2x.jpg 2x"
+										src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Art Nouveau portrait-julia Sokolova.png"
+										alt="Card preview"
+									/>
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Art Nouveau portrait</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
@@ -1280,53 +456,53 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="font-size: 12px;margin-left:2px;">123</p>
-												<!-- <div class="card__price">2.45 ETH</div> -->
-											</div>
-											<div class="card__line">
-												<div class="card__users">
-													<p style="font-size: 12px; font-weight: 400">Shahul Hameed</p>
-													<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
-												</div>
-												<!-- <div class="card__counter">3 in stock</div> -->
-											</div>
+											<!-- <div class="card__price">2.45 ETH</div> -->
 										</div>
-										<!-- <div class="card__foot">
-								<div class="card__status">
-								  <svg class="icon icon-candlesticks-up">
-									<use xlink:href="#icon-candlesticks-up"></use>
-								  </svg>Highest bid <span>0.001 ETH</span>
-								</div>
-								<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
-							  </div> -->
-									</a>
-								</div>
-								<div class="card">
-									<div class="card__preview">
-										<img
-											srcset="img/content/card-pic-5@2x.jpg 2x"
-											src="img/Figyer Thumbsnail/The Artist/Shahul Hameed/Screenshot 2022-09-17 at 11-43-23 Portrait Illustration Projects Photos videos logos illustrations and branding on Behance.png"
-											alt="Card preview"
-										/>
-										<div class="card__control">
-											<!-- <div class="status-green card__category">purchasing !</div> -->
-											<button class="card__favorite">
-												<svg class="icon icon-heart">
-													<use xlink:href="#icon-heart"></use>
-												</svg>
-											</button>
-											<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
-								  <svg class="icon icon-scatter-up">
-									<use xlink:href="#icon-scatter-up"></use>
-								  </svg></a> -->
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Julia Sokolova</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
 										</div>
 									</div>
-									<a class="card__link" href="item.html">
-										<div class="card__body">
-											<div class="card__line">
-												<div class="card__title">Painting</div>
-												<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img
+										srcset="img/content/card-pic-5@2x.jpg 2x"
+										src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Bird - Romain Bonnet.png"
+										alt="Card preview"
+									/>
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Bird</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
@@ -1336,49 +512,49 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="font-size: 12px;margin-left:2px;">123</p>
-												<!-- <div class="card__price">2.45 ETH</div> -->
-											</div>
-											<div class="card__line">
-												<div class="card__users">
-													<p style="font-size: 12px; font-weight: 400">Shahul Ahmeed</p>
-													<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
-												</div>
-												<!-- <div class="card__counter">3 in stock</div> -->
-											</div>
+											<!-- <div class="card__price">2.45 ETH</div> -->
 										</div>
-										<!-- <div class="card__foot">
-								<div class="card__status">
-								  <svg class="icon icon-candlesticks-up">
-									<use xlink:href="#icon-candlesticks-up"></use>
-								  </svg>Highest bid <span>0.001 ETH</span>
-								</div>
-								<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
-							  </div> -->
-									</a>
-								</div>
-								<div class="card">
-									<div class="card__preview">
-										<img srcset="img/content/card-pic-6@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Personal and Client Works - Anna Marchenko.png" alt="Card preview" />
-										<div class="card__control">
-											<!-- <div class="status-green card__category">purchasing !</div> -->
-											<button class="card__favorite">
-												<svg class="icon icon-heart">
-													<use xlink:href="#icon-heart"></use>
-												</svg>
-											</button>
-											<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
-								  <svg class="icon icon-scatter-up">
-									<use xlink:href="#icon-scatter-up"></use>
-								  </svg></a> -->
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Romain Bonnet</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
 										</div>
 									</div>
-									<a class="card__link" href="item.html">
-										<div class="card__body">
-											<div class="card__line">
-												<div class="card__title">Personal and Client...</div>
-												<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-6@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Collage Illustrations 3 - Ricky Linn.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Collage Illustrations III</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
@@ -1388,49 +564,49 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="font-size: 12px;margin-left:2px;">123</p>
-												<!-- <div class="card__price">2.45 ETH</div> -->
-											</div>
-											<div class="card__line">
-												<div class="card__users">
-													<p style="font-size: 12px; font-weight: 400">Anna Marchenko</p>
-													<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
-												</div>
-												<!-- <div class="card__counter">3 in stock</div> -->
-											</div>
+											<!-- <div class="card__price">2.45 ETH</div> -->
 										</div>
-										<!-- <div class="card__foot">
-								<div class="card__status">
-								  <svg class="icon icon-candlesticks-up">
-									<use xlink:href="#icon-candlesticks-up"></use>
-								  </svg>Highest bid <span>0.001 ETH</span>
-								</div>
-								<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
-							  </div> -->
-									</a>
-								</div>
-								<div class="card">
-									<div class="card__preview">
-										<img srcset="img/content/card-pic-7@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Illustration Collection II - Uran Duo.png" alt="Card preview" />
-										<div class="card__control">
-											<!-- <div class="status-green card__category">purchasing !</div> -->
-											<button class="card__favorite">
-												<svg class="icon icon-heart">
-													<use xlink:href="#icon-heart"></use>
-												</svg>
-											</button>
-											<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
-								  <svg class="icon icon-scatter-up">
-									<use xlink:href="#icon-scatter-up"></use>
-								  </svg></a> -->
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Ricky Linn</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
 										</div>
 									</div>
-									<a class="card__link" href="item.html">
-										<div class="card__body">
-											<div class="card__line">
-												<div class="card__title">Illustration Collection II</div>
-												<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-7@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/DIE ZIET-VERBRECHEN - Thomke Meyer.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">DIE ZIET-VERBRECHEN</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
@@ -1440,49 +616,49 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="font-size: 12px;margin-left:2px;">123</p>
-												<!-- <div class="card__price">2.45 ETH</div> -->
-											</div>
-											<div class="card__line">
-												<div class="card__users">
-													<p style="font-size: 12px; font-weight: 400">Uran Duo</p>
-													<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
-												</div>
-												<!-- <div class="card__counter">3 in stock</div> -->
-											</div>
+											<!-- <div class="card__price">2.45 ETH</div> -->
 										</div>
-										<!-- <div class="card__foot">
-								<div class="card__status">
-								  <svg class="icon icon-candlesticks-up">
-									<use xlink:href="#icon-candlesticks-up"></use>
-								  </svg>Highest bid <span>0.001 ETH</span>
-								</div>
-								<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
-							  </div> -->
-									</a>
-								</div>
-								<div class="card">
-									<div class="card__preview">
-										<img srcset="img/content/card-pic-1@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Sylized Portrait - Ed Duchuy.png" alt="Card preview" />
-										<div class="card__control">
-											<!-- <div class="status-green card__category">purchasing !</div> -->
-											<button class="card__favorite">
-												<svg class="icon icon-heart">
-													<use xlink:href="#icon-heart"></use>
-												</svg>
-											</button>
-											<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
-								  <svg class="icon icon-scatter-up">
-									<use xlink:href="#icon-scatter-up"></use>
-								  </svg></a> -->
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Thomke Meyer</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
 										</div>
 									</div>
-									<a class="card__link" href="item.html">
-										<div class="card__body">
-											<div class="card__line">
-												<div class="card__title">Sylized Portrait</div>
-												<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-1@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Illustration Collection II - Uran Duo.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Illustration Collection II</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
@@ -1492,65 +668,244 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
                                             </svg>                                                
 											<p style="font-size: 12px;margin-left:2px;">123</p>
-												<!-- <div class="card__price">2.45 ETH</div> -->
-											</div>
-											<div class="card__line">
-												<div class="card__users">
-													<p style="font-size: 12px; font-weight: 400">Ed Duchuy</p>
-													<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
-									<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
-												</div>
-												<!-- <div class="card__counter">3 in stock</div> -->
-											</div>
+											<!-- <div class="card__price">2.45 ETH</div> -->
 										</div>
-										<!-- <div class="card__foot">
-								<div class="card__status">
-								  <svg class="icon icon-candlesticks-up">
-									<use xlink:href="#icon-candlesticks-up"></use>
-								  </svg>Highest bid <span>0.001 ETH</span>
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Uran Duo</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
+										</div>
+									</div>
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-1@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Retratos personalizadosen 3D - Nathalia Escalona.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
 								</div>
-								<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
-							  </div> -->
-									</a>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Retratos personali...</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
+                                            </svg>                                                
+											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
+											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
+                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
+                                            </svg>                                                
+											<p style="font-size: 12px;margin-left:2px;">123</p>
+											<!-- <div class="card__price">2.45 ETH</div> -->
+										</div>
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Nathalia Escalona</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
+										</div>
+									</div>
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-1@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Dont notice me now - Omochi.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
 								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Dont notice me now</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
+                                            </svg>                                                
+											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
+											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
+                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
+                                            </svg>                                                
+											<p style="font-size: 12px;margin-left:2px;">123</p>
+											<!-- <div class="card__price">2.45 ETH</div> -->
+										</div>
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Omochi</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
+										</div>
+									</div>
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-1@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Fashion portrait -Katerina Kolberg.png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">Fashion portrait</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
+                                            </svg>                                                
+											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
+											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
+                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
+                                            </svg>                                                
+											<p style="font-size: 12px;margin-left:2px;">123</p>
+											<!-- <div class="card__price">2.45 ETH</div> -->
+										</div>
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Katerina Kolberg</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
+										</div>
+									</div>
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
+							</div>
+							<div class="card">
+								<div class="card__preview">
+									<img srcset="img/content/card-pic-1@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/GUNDAM - Ash Thorp .png" alt="Card preview" />
+									<div class="card__control">
+										<!-- <div class="status-green card__category">purchasing !</div> -->
+										<button class="card__favorite">
+											<svg class="icon icon-heart">
+												<use xlink:href="#icon-heart"></use>
+											</svg>
+										</button>
+										<!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
+							  <svg class="icon icon-scatter-up">
+								<use xlink:href="#icon-scatter-up"></use>
+							  </svg></a> -->
+									</div>
+								</div>
+								<a class="card__link" href="item.html">
+									<div class="card__body">
+										<div class="card__line">
+											<div class="card__title">GUNDAM</div>
+											<svg width="15" height="17" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 1.50598C6.77007 0.805503 5.77906 0.375 4.6875 0.375C2.44384 0.375 0.625 2.19384 0.625 4.4375C0.625 8.41766 4.98146 10.6156 6.75862 11.3467C7.23723 11.5436 7.76277 11.5436 8.24138 11.3467C10.0185 10.6156 14.375 8.41766 14.375 4.4375C14.375 2.19384 12.5562 0.375 10.3125 0.375C9.22094 0.375 8.22993 0.805503 7.5 1.50598Z" fill="#777E91"/>
+                                            </svg>                                                
+											<p style="margin-right: 5px; margin-left:2px; font-size: 12px;">123</p>
+											<!-- <img src="img/Figyer Thumbsnail/icons/icon-filled-eye.png" alt="" /> -->
+                                            <svg width="16" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99842 13.3332C11.3494 13.3332 13.6477 11.2277 14.8932 9.6625C15.6772 8.67734 15.6772 7.32233 14.8932 6.33717C13.6477 4.77201 11.3494 2.6665 7.99842 2.6665C4.64739 2.6665 2.34912 4.77201 1.1036 6.33717C0.319633 7.32233 0.319632 8.67734 1.1036 9.6625C2.34912 11.2277 4.64739 13.3332 7.99842 13.3332ZM7.9984 10.6665C9.47116 10.6665 10.6651 9.4726 10.6651 7.99984C10.6651 6.52708 9.47116 5.33317 7.9984 5.33317C6.52565 5.33317 5.33174 6.52708 5.33174 7.99984C5.33174 9.4726 6.52565 10.6665 7.9984 10.6665Z" fill="#777E91"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66914 7.94335C6.66836 7.96208 6.66797 7.98091 6.66797 7.99984C6.66797 8.33799 6.79385 8.64673 7.0013 8.88178C7.1536 9.05433 7.34986 9.18716 7.57255 9.26274C7.7071 9.3084 7.85131 9.33317 8.0013 9.33317C8.73768 9.33317 9.33464 8.73622 9.33464 7.99984C9.33464 7.84985 9.30987 7.70564 9.2642 7.57108C9.18862 7.34839 9.05579 7.15213 8.88324 6.99984C8.6482 6.79238 8.33945 6.6665 8.0013 6.6665C7.98238 6.6665 7.96355 6.6669 7.94481 6.66768C7.9814 6.77161 8.0013 6.8834 8.0013 6.99984C8.0013 7.08703 7.99014 7.17161 7.96918 7.25223C7.8783 7.6017 7.60316 7.87684 7.2537 7.96771C7.17307 7.98868 7.08849 7.99984 7.0013 7.99984C6.88486 7.99984 6.77307 7.97994 6.66914 7.94335Z" fill="#777E91"/>
+                                            </svg>                                                
+											<p style="font-size: 12px;margin-left:2px;">123</p>
+											<!-- <div class="card__price">2.45 ETH</div> -->
+										</div>
+										<div class="card__line">
+											<div class="card__users">
+												<p style="font-size: 12px; font-weight: 400">Ash Thorp</p>
+												<!-- <div class="card__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar"/></div>
+								<div class="card__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar"/></div> -->
+											</div>
+											<!-- <div class="card__counter">3 in stock</div> -->
+										</div>
+									</div>
+									<!-- <div class="card__foot">
+							<div class="card__status">
+							  <svg class="icon icon-candlesticks-up">
+								<use xlink:href="#icon-candlesticks-up"></use>
+							  </svg>Highest bid <span>0.001 ETH</span>
+							</div>
+							<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span></div>
+						  </div> -->
+								</a>
 							</div>
 						</div>
-						<div class="discover__btns">
-							<button class="button-stroke button-small">Load more</button>
-						</div>
+					</div>
+					<div class="discover__btns">
+						<button class="button-stroke button-small">Load more</button>
 					</div>
 				</div>
-				<div class="section description registered">
-					<div class="description__center center">
-						<div class="description__wrap">
-							<div class="description__stage">Join the network</div>
-							<h1 class="description__title h1">Look into the portrait art more</h1>
-							<div class="description__text">Create, Share, Explore and Get chance to hire</div>
-							<div class="description__btns">
-								<a class="button description__button header__connect" href="connect-wallet.html">Sign Up</a><a class="button-stroke button description__button header__signin" href="connect-wallet.html">Sign In</a>
-							</div>
-						</div>
-						<div class="description__gallery">
-							<div class="description__preview">
-								<img class="some-icon" srcset="./img/Figyer Thumbsnail/Blue Women - Asset 12x.svg 2x" src="./img/Figyer Thumbsnail/Blue Women - Asset 1.svg" alt="Blue women" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="popup popup_connect mfp-hide" id="popup-connect">
-					<div class="popup__img">
-						<svg class="icon icon-wallet">
-							<use xlink:href="#icon-wallet"></use>
-						</svg>
-					</div>
-					<div class="popup__description">You need to connect your wallet first to sign messages and send transaction to Ethereum network</div>
-					<div class="popup__btns">
-						<a class="button popup__button" href="connect-wallet.html">Connect wallet</a>
-						<button class="button-stroke popup__button js-popup-close">Cancel</button>
-					</div>
-				</div>
-				<div class="popup popup_wallet mfp-hide" id="popup-wallet">
+			</div>
+			<!-- <div class="popup popup_wallet mfp-hide" id="popup-wallet">
 					<div class="popup__title h4">Folow steps</div>
 					<div class="steps">
 						<div class="steps__item">
@@ -1629,7 +984,7 @@
 						<button class="button-stroke popup__button js-popup-close">Cancel</button>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- footer-->
 			<footer class="footer">
 				<div class="footer__center center">
