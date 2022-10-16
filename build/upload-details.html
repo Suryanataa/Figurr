@@ -276,7 +276,7 @@
 											<div class="upload__row">
 												<div class="upload__col">
 													<div class="field">
-														<div class="field__label">Tools Used</div>
+														<div class="upload__label">Tools Used</div>
 														<div class="field__wrap">
 															<input class="field__input" type="text" name="size" placeholder="What materials did you use?" required />
 														</div>
@@ -284,7 +284,7 @@
 												</div>
 												<div class="upload__col">
 													<div class="field">
-														<div class="field__label">Preferences</div>
+														<div class="upload__label">Preferences</div>
 														<div class="field__wrap">
 															<select class="select">
 																<option>All</option>
@@ -298,7 +298,56 @@
 										</div>
 									</div>
 								</div>
-								<div class="upload__options" style="border-bottom: 1px solid #e6e8ec; padding-bottom: 40px">
+								<div class="upload__row check">
+									<div class="upload__label" style="margin-bottom: 20px">How would your categorize This Project <span class="upload__label_suggest">(Required)</span></div>
+									<div class="activity__group">
+										<div class="upload__col">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Fine Art</span></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Comission</span></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Comic</span></span>
+											</label>
+										</div>
+										<div class="upload__col">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Fashion</span></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Movies</span></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Politician</span></span>
+											</label>
+										</div>
+										<div class="upload__col">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Music</span></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Public Figure</span></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Mural</span></span>
+											</label>
+										</div>
+										<div class="upload__col">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Fan Art</span></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Sport</span></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Grafiti</span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="upload__options">
 									<div class="upload__option">
 										<div class="upload__box">
 											<div class="upload__category">Put on sale</div>
@@ -321,28 +370,31 @@
 										<div class="loader"></div>
 									</div>
 								</div> -->
-								<div class="upload__roww" id="upload1" style="justify-content: center; margin-bottom: 40px">
+								<div class="upload__roww" id="upload1" style="margin-bottom: 40px">
 									<div class="upload__coll" id="cancel">
-										<a class="preview__clear" href="#" style="margin-top: 0">
+										<a class="preview__clear variants__button" href="./build/upload-variants.html" style="margin-top: 0">
 											<svg class="icon icon-circle-close">
-												<use xlink:href="#icon-circle-close"></use></svg
-											>Cancel</a
-										>
+												<use xlink:href="#icon-circle-close"></use>
+											</svg>
+											Cancel
+										</a>
 									</div>
 									<div class="upload__coll" id="save">
 										<a class="button-stroke variants__button" href="#">Save as draft</a>
 									</div>
 									<div class="upload__coll" id="next">
 										<a class="button variants__button" href="upload-details.html">
-											Continue
+											Publish
 											<svg class="icon icon-arrow-next" style="height: 12px; width: 15px; margin-right: 0">
 												<use xlink:href="#icon-arrow-next"></use>
 											</svg>
 										</a>
 									</div>
-									<div class="upload__saving">
-										Auto saving
-										<div class="loader"></div>
+									<div class="upload__coll">
+										<div class="upload__saving">
+											Auto saving
+											<div class="loader"></div>
+										</div>
 									</div>
 								</div>
 							</div>
