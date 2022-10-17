@@ -43,7 +43,7 @@
 		</script>
 	</head>
 	<body>
-		<!-- <script>
+		<script>
 			console.log(localStorage.getItem("darkMode"));
 			if (localStorage.getItem("darkMode") === "on") {
 				document.body.classList.add("dark");
@@ -51,11 +51,11 @@
 					document.querySelector(".js-theme input").checked = true;
 				});
 			}
-		</script> -->
+		</script>
 		<!-- outer-->
 		<div class="outer">
 			<!-- header-->
-			<header class="header js-header registered" data-id="#header">
+			<header class="header js-header" data-id="#header">
 				<div class="header__center center">
 					<a class="header__logo" href="index.html"><img class="some-icon" src="./img/Figyer Thumbsnail/logo.svg" alt="Figyer" /></a>
 					<div class="header__wrapper js-header-wrapper">
@@ -178,28 +178,20 @@
 				</div>
 			</header>
 
-			<div class="outer__inner">
-				<div class="section result">
-					<div class="result__center center">
-						<div class="result__preview">
-							<img class="some-icon" srcset="./img/Figyer Thumbsnail/Frame 1049@2x.png 2x" src="./img/Figyer Thumbsnail/Frame 1049.png" alt="Figures" />
-						</div>
-						<div class="result__wrap">
-							<h2 class="result__title h2">Sorry, we couldn’t find any results for this search.</h2>
-							<div class="result__info">Maybe give one of these a try?</div>
-							<form class="subscription">
-								<input class="subscription__input" type="text" name="search" placeholder="Enter your search..." required="required" />
-								<button class="subscription__btn">
-									<svg class="icon icon-arrow-next">
-										<use xlink:href="#icon-arrow-next"></use>
-									</svg>
-								</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- footer-->
+
+            <div class="outer__inner">
+                <div class="section" style="padding-top: 5%;">
+                    <div class="discover__center center" style="padding-left: 19%; padding-right: 19%;">
+                        <div class="card__line collection-title">
+                            <h3 class="discover__title h3" style="font-weight: 700; font-size:48px;">Message</h3>
+                            <button class="button-stroke button-small header__button btnupload-none" style="margin-top: 10px; margin-left: auto;">Compose</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- footer-->
 			<footer class="footer">
 				<div class="footer__center center">
 					<div class="footer__row">

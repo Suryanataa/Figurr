@@ -219,11 +219,11 @@
                                     <div class="card__preview"><img srcSet="img/content/card-pic-1@2x.jpg 2x" src="img/Figyer Thumbsnail/Collection/Mo Salah/Mo Salah - Abdelrahman Taymour.png" alt="Card preview"/>
                                       <div class="card__control">
                                         <!-- <div class="status-green card__category">purchasing !</div> -->
-                                        <button class="card__collections" onclick="location.href='collection.html'">
-                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                          </svg>
-                                        </button>
+                                        <button class="card__favorite">
+                                            <svg class="icon icon-heart">
+                                              <use xlink:href="#icon-heart"></use>
+                                            </svg>
+                                          </button>
                                         <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                                           <svg class="icon icon-scatter-up">
                                             <use xlink:href="#icon-scatter-up"></use>
@@ -239,7 +239,15 @@
                                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                                   <div class="" style="display: flex;justify-content:flex-end">
                                                     <div class="card__line">
-                                                      <p style="font-size: 12px;">5 items</p>                                 
+                                                      <svg width="15" height="15" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#ffffff"/>
+                                  </svg>  
+                                  <p style="margin-left: 1px; font-size: 12px;">123</p>
+                                  <svg width="15" height="15" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0006 20C17.0271 20 20.4745 16.8417 22.3428 14.494C23.5187 13.0163 23.5187 10.9837 22.3428 9.506C20.4745 7.15826 17.0271 4 12.0006 4C6.97402 4 3.52661 7.15826 1.65833 9.506C0.482379 10.9837 0.482378 13.0163 1.65833 14.494C3.52661 16.8417 6.97402 20 12.0006 20ZM12.0005 16C14.2097 16 16.0005 14.2091 16.0005 12C16.0005 9.79086 14.2097 8 12.0005 8C9.7914 8 8.00054 9.79086 8.00054 12C8.00054 14.2091 9.7914 16 12.0005 16Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0018 11.9153C10.0006 11.9434 10 11.9716 10 12C10 12.5072 10.1888 12.9703 10.5 13.3229C10.7284 13.5817 11.0228 13.781 11.3569 13.8943C11.5587 13.9628 11.775 14 12 14C13.1046 14 14 13.1046 14 12C14 11.775 13.9628 11.5587 13.8943 11.3569C13.781 11.0228 13.5817 10.7284 13.3229 10.5C12.9703 10.1888 12.5072 10 12 10C11.9716 10 11.9434 10.0006 11.9153 10.0018C11.9701 10.1577 12 10.3253 12 10.5C12 10.6308 11.9833 10.7577 11.9518 10.8786C11.8155 11.4028 11.4028 11.8155 10.8786 11.9518C10.7577 11.9833 10.6308 12 10.5 12C10.3253 12 10.1577 11.9701 10.0018 11.9153Z" fill="#ffffff"/>
+                                  </svg>
+                                    <p style="margin-left: 1px; font-size: 12px">123<p>                                 
                                                     </div>
                                                   </div>
                                                 </div>
@@ -277,15 +285,11 @@
                                       <img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Collection/Mo Salah/Egyptian Hope - Morshedi.png" alt="Card preview"/>
                                       <div class="card__control">
                                         <!-- <div class="status-green card__category">purchasing !</div> -->
-                                        <button class="card__collections" onclick="location.href='collection.html'">
-                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                            </svg>
-                                            
-                                          <!-- <svg class="icon icon-heart">
-                                            <use xlink:href="#icon-heart"></use>
-                                          </svg> -->
-                                        </button>
+                                        <button class="card__favorite">
+                              <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                              </svg>
+                            </button>
                                         <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                                           <svg class="icon icon-scatter-up">
                                             <use xlink:href="#icon-scatter-up"></use>
@@ -301,7 +305,15 @@
                                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                                   <div class="" style="display: flex;justify-content:flex-end">
                                                     <div class="card__line">
-                                                      <p style="font-size: 12px;">5 items</p>                                 
+                                                      <svg width="15" height="15" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#ffffff"/>
+                                  </svg>  
+                                  <p style="margin-left: 1px; font-size: 12px;">123</p>
+                                  <svg width="15" height="15" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0006 20C17.0271 20 20.4745 16.8417 22.3428 14.494C23.5187 13.0163 23.5187 10.9837 22.3428 9.506C20.4745 7.15826 17.0271 4 12.0006 4C6.97402 4 3.52661 7.15826 1.65833 9.506C0.482379 10.9837 0.482378 13.0163 1.65833 14.494C3.52661 16.8417 6.97402 20 12.0006 20ZM12.0005 16C14.2097 16 16.0005 14.2091 16.0005 12C16.0005 9.79086 14.2097 8 12.0005 8C9.7914 8 8.00054 9.79086 8.00054 12C8.00054 14.2091 9.7914 16 12.0005 16Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0018 11.9153C10.0006 11.9434 10 11.9716 10 12C10 12.5072 10.1888 12.9703 10.5 13.3229C10.7284 13.5817 11.0228 13.781 11.3569 13.8943C11.5587 13.9628 11.775 14 12 14C13.1046 14 14 13.1046 14 12C14 11.775 13.9628 11.5587 13.8943 11.3569C13.781 11.0228 13.5817 10.7284 13.3229 10.5C12.9703 10.1888 12.5072 10 12 10C11.9716 10 11.9434 10.0006 11.9153 10.0018C11.9701 10.1577 12 10.3253 12 10.5C12 10.6308 11.9833 10.7577 11.9518 10.8786C11.8155 11.4028 11.4028 11.8155 10.8786 11.9518C10.7577 11.9833 10.6308 12 10.5 12C10.3253 12 10.1577 11.9701 10.0018 11.9153Z" fill="#ffffff"/>
+                                  </svg>
+                                    <p style="margin-left: 1px; font-size: 12px">123<p>                                 
                                                     </div>
                                                   </div>
                                                 </div>
@@ -338,15 +350,11 @@
                                     <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Collection/Mo Salah/FOOTBALL ILLUSTRATION V3-Mink Couteaux.png" alt="Card preview"/>
                                       <div class="card__control">
                                         <!-- <div class="status-green card__category">purchasing !</div> -->
-                                        <button class="card__collections" onclick="location.href='collection.html'">
-                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                            </svg>
-                                            
-                                          <!-- <svg class="icon icon-heart">
-                                            <use xlink:href="#icon-heart"></use>
-                                          </svg> -->
-                                        </button>
+                                        <button class="card__favorite">
+                              <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                              </svg>
+                            </button>
                                         <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                                           <svg class="icon icon-scatter-up">
                                             <use xlink:href="#icon-scatter-up"></use>
@@ -362,7 +370,15 @@
                                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                                   <div class="" style="display: flex;justify-content:flex-end">
                                                     <div class="card__line">
-                                                      <p style="font-size: 12px;">5 items</p>                                 
+                                                      <svg width="15" height="15" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#ffffff"/>
+                                  </svg>  
+                                  <p style="margin-left: 1px; font-size: 12px;">123</p>
+                                  <svg width="15" height="15" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0006 20C17.0271 20 20.4745 16.8417 22.3428 14.494C23.5187 13.0163 23.5187 10.9837 22.3428 9.506C20.4745 7.15826 17.0271 4 12.0006 4C6.97402 4 3.52661 7.15826 1.65833 9.506C0.482379 10.9837 0.482378 13.0163 1.65833 14.494C3.52661 16.8417 6.97402 20 12.0006 20ZM12.0005 16C14.2097 16 16.0005 14.2091 16.0005 12C16.0005 9.79086 14.2097 8 12.0005 8C9.7914 8 8.00054 9.79086 8.00054 12C8.00054 14.2091 9.7914 16 12.0005 16Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0018 11.9153C10.0006 11.9434 10 11.9716 10 12C10 12.5072 10.1888 12.9703 10.5 13.3229C10.7284 13.5817 11.0228 13.781 11.3569 13.8943C11.5587 13.9628 11.775 14 12 14C13.1046 14 14 13.1046 14 12C14 11.775 13.9628 11.5587 13.8943 11.3569C13.781 11.0228 13.5817 10.7284 13.3229 10.5C12.9703 10.1888 12.5072 10 12 10C11.9716 10 11.9434 10.0006 11.9153 10.0018C11.9701 10.1577 12 10.3253 12 10.5C12 10.6308 11.9833 10.7577 11.9518 10.8786C11.8155 11.4028 11.4028 11.8155 10.8786 11.9518C10.7577 11.9833 10.6308 12 10.5 12C10.3253 12 10.1577 11.9701 10.0018 11.9153Z" fill="#ffffff"/>
+                                  </svg>
+                                    <p style="margin-left: 1px; font-size: 12px">123<p>                                 
                                                     </div>
                                                   </div>
                                                 </div>
@@ -398,15 +414,11 @@
                                     <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Collection/Mo Salah/Mo Salah - DHL - Mohamed Gaber.png" alt="Card preview"/>
                                       <div class="card__control">
                                         <!-- <div class="status-green card__category">purchasing !</div> -->
-                                        <button class="card__collections" onclick="location.href='collection.html'">
-                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                            </svg>
-                                            
-                                          <!-- <svg class="icon icon-heart">
-                                            <use xlink:href="#icon-heart"></use>
-                                          </svg> -->
-                                        </button>
+                                        <button class="card__favorite">
+                              <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                              </svg>
+                            </button>
                                         <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                                           <svg class="icon icon-scatter-up">
                                             <use xlink:href="#icon-scatter-up"></use>
@@ -422,7 +434,15 @@
                                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                                   <div class="" style="display: flex;justify-content:flex-end">
                                                     <div class="card__line">
-                                                      <p style="font-size: 12px;">5 items</p>                                 
+                                                      <svg width="15" height="15" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#ffffff"/>
+                                  </svg>  
+                                  <p style="margin-left: 1px; font-size: 12px;">123</p>
+                                  <svg width="15" height="15" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0006 20C17.0271 20 20.4745 16.8417 22.3428 14.494C23.5187 13.0163 23.5187 10.9837 22.3428 9.506C20.4745 7.15826 17.0271 4 12.0006 4C6.97402 4 3.52661 7.15826 1.65833 9.506C0.482379 10.9837 0.482378 13.0163 1.65833 14.494C3.52661 16.8417 6.97402 20 12.0006 20ZM12.0005 16C14.2097 16 16.0005 14.2091 16.0005 12C16.0005 9.79086 14.2097 8 12.0005 8C9.7914 8 8.00054 9.79086 8.00054 12C8.00054 14.2091 9.7914 16 12.0005 16Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0018 11.9153C10.0006 11.9434 10 11.9716 10 12C10 12.5072 10.1888 12.9703 10.5 13.3229C10.7284 13.5817 11.0228 13.781 11.3569 13.8943C11.5587 13.9628 11.775 14 12 14C13.1046 14 14 13.1046 14 12C14 11.775 13.9628 11.5587 13.8943 11.3569C13.781 11.0228 13.5817 10.7284 13.3229 10.5C12.9703 10.1888 12.5072 10 12 10C11.9716 10 11.9434 10.0006 11.9153 10.0018C11.9701 10.1577 12 10.3253 12 10.5C12 10.6308 11.9833 10.7577 11.9518 10.8786C11.8155 11.4028 11.4028 11.8155 10.8786 11.9518C10.7577 11.9833 10.6308 12 10.5 12C10.3253 12 10.1577 11.9701 10.0018 11.9153Z" fill="#ffffff"/>
+                                  </svg>
+                                    <p style="margin-left: 1px; font-size: 12px">123<p>                                 
                                                     </div>
                                                   </div>
                                                 </div>
@@ -458,15 +478,11 @@
                                     <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Collection/Mo Salah/Mo Salah Vector Art - Abdelrahman Taymour.png" alt="Card preview"/>
                                       <div class="card__control">
                                         <!-- <div class="status-green card__category">purchasing !</div> -->
-                                        <button class="card__collections" onclick="location.href='collection.html'">
-                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                            </svg>
-                                            
-                                          <!-- <svg class="icon icon-heart">
-                                            <use xlink:href="#icon-heart"></use>
-                                          </svg> -->
-                                        </button>
+                                        <button class="card__favorite">
+                              <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                              </svg>
+                            </button>
                                         <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                                           <svg class="icon icon-scatter-up">
                                             <use xlink:href="#icon-scatter-up"></use>
@@ -482,7 +498,15 @@
                                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                                   <div class="" style="display: flex;justify-content:flex-end">
                                                     <div class="card__line">
-                                                      <p style="font-size: 12px;">5 items</p>                                 
+                                                      <svg width="15" height="15" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#ffffff"/>
+                                  </svg>  
+                                  <p style="margin-left: 1px; font-size: 12px;">123</p>
+                                  <svg width="15" height="15" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0006 20C17.0271 20 20.4745 16.8417 22.3428 14.494C23.5187 13.0163 23.5187 10.9837 22.3428 9.506C20.4745 7.15826 17.0271 4 12.0006 4C6.97402 4 3.52661 7.15826 1.65833 9.506C0.482379 10.9837 0.482378 13.0163 1.65833 14.494C3.52661 16.8417 6.97402 20 12.0006 20ZM12.0005 16C14.2097 16 16.0005 14.2091 16.0005 12C16.0005 9.79086 14.2097 8 12.0005 8C9.7914 8 8.00054 9.79086 8.00054 12C8.00054 14.2091 9.7914 16 12.0005 16Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0018 11.9153C10.0006 11.9434 10 11.9716 10 12C10 12.5072 10.1888 12.9703 10.5 13.3229C10.7284 13.5817 11.0228 13.781 11.3569 13.8943C11.5587 13.9628 11.775 14 12 14C13.1046 14 14 13.1046 14 12C14 11.775 13.9628 11.5587 13.8943 11.3569C13.781 11.0228 13.5817 10.7284 13.3229 10.5C12.9703 10.1888 12.5072 10 12 10C11.9716 10 11.9434 10.0006 11.9153 10.0018C11.9701 10.1577 12 10.3253 12 10.5C12 10.6308 11.9833 10.7577 11.9518 10.8786C11.8155 11.4028 11.4028 11.8155 10.8786 11.9518C10.7577 11.9833 10.6308 12 10.5 12C10.3253 12 10.1577 11.9701 10.0018 11.9153Z" fill="#ffffff"/>
+                                  </svg>
+                                    <p style="margin-left: 1px; font-size: 12px">123<p>                                 
                                                     </div>
                                                   </div>
                                                 </div>
@@ -518,15 +542,11 @@
                                     <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Collection/Mo Salah/Mo Salah - The Egyptian King - Harry G Ward.png" alt="Card preview"/>
                                       <div class="card__control">
                                         <!-- <div class="status-green card__category">purchasing !</div> -->
-                                        <button class="card__collections" onclick="location.href='collection.html'">
-                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                            </svg>
-                                            
-                                          <!-- <svg class="icon icon-heart">
-                                            <use xlink:href="#icon-heart"></use>
-                                          </svg> -->
-                                        </button>
+                                        <button class="card__favorite">
+                              <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                              </svg>
+                            </button>
                                         <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                                           <svg class="icon icon-scatter-up">
                                             <use xlink:href="#icon-scatter-up"></use>
@@ -542,7 +562,15 @@
                                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                                   <div class="" style="display: flex;justify-content:flex-end">
                                                     <div class="card__line">
-                                                      <p style="font-size: 12px;">5 items</p>                                 
+                                                      <svg width="15" height="15" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#ffffff"/>
+                                  </svg>  
+                                  <p style="margin-left: 1px; font-size: 12px;">123</p>
+                                  <svg width="15" height="15" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0006 20C17.0271 20 20.4745 16.8417 22.3428 14.494C23.5187 13.0163 23.5187 10.9837 22.3428 9.506C20.4745 7.15826 17.0271 4 12.0006 4C6.97402 4 3.52661 7.15826 1.65833 9.506C0.482379 10.9837 0.482378 13.0163 1.65833 14.494C3.52661 16.8417 6.97402 20 12.0006 20ZM12.0005 16C14.2097 16 16.0005 14.2091 16.0005 12C16.0005 9.79086 14.2097 8 12.0005 8C9.7914 8 8.00054 9.79086 8.00054 12C8.00054 14.2091 9.7914 16 12.0005 16Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0018 11.9153C10.0006 11.9434 10 11.9716 10 12C10 12.5072 10.1888 12.9703 10.5 13.3229C10.7284 13.5817 11.0228 13.781 11.3569 13.8943C11.5587 13.9628 11.775 14 12 14C13.1046 14 14 13.1046 14 12C14 11.775 13.9628 11.5587 13.8943 11.3569C13.781 11.0228 13.5817 10.7284 13.3229 10.5C12.9703 10.1888 12.5072 10 12 10C11.9716 10 11.9434 10.0006 11.9153 10.0018C11.9701 10.1577 12 10.3253 12 10.5C12 10.6308 11.9833 10.7577 11.9518 10.8786C11.8155 11.4028 11.4028 11.8155 10.8786 11.9518C10.7577 11.9833 10.6308 12 10.5 12C10.3253 12 10.1577 11.9701 10.0018 11.9153Z" fill="#ffffff"/>
+                                  </svg>
+                                    <p style="margin-left: 1px; font-size: 12px">123<p>                                 
                                                     </div>
                                                   </div>
                                                 </div>
@@ -578,15 +606,11 @@
                                     <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Collection/Mo Salah/Mo Salah - Khaled Hesham.png" alt="Card preview"/>
                                       <div class="card__control">
                                         <!-- <div class="status-green card__category">purchasing !</div> -->
-                                        <button class="card__collections" onclick="location.href='collection.html'">
-                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                            </svg>
-                                            
-                                          <!-- <svg class="icon icon-heart">
-                                            <use xlink:href="#icon-heart"></use>
-                                          </svg> -->
-                                        </button>
+                                        <button class="card__favorite">
+                              <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                              </svg>
+                            </button>
                                         <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                                           <svg class="icon icon-scatter-up">
                                             <use xlink:href="#icon-scatter-up"></use>
@@ -602,7 +626,15 @@
                                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                                   <div class="" style="display: flex;justify-content:flex-end">
                                                     <div class="card__line">
-                                                      <p style="font-size: 12px;">5 items</p>                                 
+                                                      <svg width="15" height="15" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#ffffff"/>
+                                  </svg>  
+                                  <p style="margin-left: 1px; font-size: 12px;">123</p>
+                                  <svg width="15" height="15" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0006 20C17.0271 20 20.4745 16.8417 22.3428 14.494C23.5187 13.0163 23.5187 10.9837 22.3428 9.506C20.4745 7.15826 17.0271 4 12.0006 4C6.97402 4 3.52661 7.15826 1.65833 9.506C0.482379 10.9837 0.482378 13.0163 1.65833 14.494C3.52661 16.8417 6.97402 20 12.0006 20ZM12.0005 16C14.2097 16 16.0005 14.2091 16.0005 12C16.0005 9.79086 14.2097 8 12.0005 8C9.7914 8 8.00054 9.79086 8.00054 12C8.00054 14.2091 9.7914 16 12.0005 16Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0018 11.9153C10.0006 11.9434 10 11.9716 10 12C10 12.5072 10.1888 12.9703 10.5 13.3229C10.7284 13.5817 11.0228 13.781 11.3569 13.8943C11.5587 13.9628 11.775 14 12 14C13.1046 14 14 13.1046 14 12C14 11.775 13.9628 11.5587 13.8943 11.3569C13.781 11.0228 13.5817 10.7284 13.3229 10.5C12.9703 10.1888 12.5072 10 12 10C11.9716 10 11.9434 10.0006 11.9153 10.0018C11.9701 10.1577 12 10.3253 12 10.5C12 10.6308 11.9833 10.7577 11.9518 10.8786C11.8155 11.4028 11.4028 11.8155 10.8786 11.9518C10.7577 11.9833 10.6308 12 10.5 12C10.3253 12 10.1577 11.9701 10.0018 11.9153Z" fill="#ffffff"/>
+                                  </svg>
+                                    <p style="margin-left: 1px; font-size: 12px">123<p>                                 
                                                     </div>
                                                   </div>
                                                 </div>
@@ -638,15 +670,11 @@
                                     <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Collection/Mo Salah/40 Football Paintings (Soccer) - David Roman.png" alt="Card preview"/>
                                       <div class="card__control">
                                         <!-- <div class="status-green card__category">purchasing !</div> -->
-                                        <button class="card__collections" onclick="location.href='collection.html'">
-                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                            </svg>
-                                            
-                                          <!-- <svg class="icon icon-heart">
-                                            <use xlink:href="#icon-heart"></use>
-                                          </svg> -->
-                                        </button>
+                                        <button class="card__favorite">
+                              <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                              </svg>
+                            </button>
                                         <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                                           <svg class="icon icon-scatter-up">
                                             <use xlink:href="#icon-scatter-up"></use>
@@ -662,7 +690,15 @@
                                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                                   <div class="" style="display: flex;justify-content:flex-end">
                                                     <div class="card__line">
-                                                      <p style="font-size: 12px;">5 items</p>                                 
+                                                      <svg width="15" height="15" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.80957C9.83211 0.688804 8.24649 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 12.8683 6.97034 16.385 9.81379 17.5547C10.5796 17.8697 11.4204 17.8697 12.1862 17.5547C15.0297 16.385 22 12.8682 22 6.5C22 2.91015 19.0899 0 15.5 0C13.7535 0 12.1679 0.688804 11 1.80957Z" fill="#ffffff"/>
+                                  </svg>  
+                                  <p style="margin-left: 1px; font-size: 12px;">123</p>
+                                  <svg width="15" height="15" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0006 20C17.0271 20 20.4745 16.8417 22.3428 14.494C23.5187 13.0163 23.5187 10.9837 22.3428 9.506C20.4745 7.15826 17.0271 4 12.0006 4C6.97402 4 3.52661 7.15826 1.65833 9.506C0.482379 10.9837 0.482378 13.0163 1.65833 14.494C3.52661 16.8417 6.97402 20 12.0006 20ZM12.0005 16C14.2097 16 16.0005 14.2091 16.0005 12C16.0005 9.79086 14.2097 8 12.0005 8C9.7914 8 8.00054 9.79086 8.00054 12C8.00054 14.2091 9.7914 16 12.0005 16Z" fill="#ffffff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0018 11.9153C10.0006 11.9434 10 11.9716 10 12C10 12.5072 10.1888 12.9703 10.5 13.3229C10.7284 13.5817 11.0228 13.781 11.3569 13.8943C11.5587 13.9628 11.775 14 12 14C13.1046 14 14 13.1046 14 12C14 11.775 13.9628 11.5587 13.8943 11.3569C13.781 11.0228 13.5817 10.7284 13.3229 10.5C12.9703 10.1888 12.5072 10 12 10C11.9716 10 11.9434 10.0006 11.9153 10.0018C11.9701 10.1577 12 10.3253 12 10.5C12 10.6308 11.9833 10.7577 11.9518 10.8786C11.8155 11.4028 11.4028 11.8155 10.8786 11.9518C10.7577 11.9833 10.6308 12 10.5 12C10.3253 12 10.1577 11.9701 10.0018 11.9153Z" fill="#ffffff"/>
+                                  </svg>
+                                    <p style="margin-left: 1px; font-size: 12px">123<p>                                 
                                                     </div>
                                                   </div>
                                                 </div>
