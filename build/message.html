@@ -55,7 +55,7 @@
 		<!-- outer-->
 		<div class="outer">
 			<!-- header-->
-			<header class="header js-header" data-id="#header">
+			<header class="header js-header registered" data-id="#header">
 				<div class="header__center center">
 					<a class="header__logo" href="index.html"><img class="some-icon" src="./img/Figyer Thumbsnail/logo.svg" alt="Figyer" /></a>
 					<div class="header__wrapper js-header-wrapper">
@@ -180,15 +180,66 @@
 
 
             <div class="outer__inner">
-                <div class="section" style="padding-top: 5%;">
-                    <div class="discover__center center" style="padding-left: 19%; padding-right: 19%;">
+                <div class="profile" style="padding-top: 5%;">
+                    <div class="discover__center center message-padding" style="padding-left: 19%; padding-right: 19%;">
                         <div class="card__line collection-title">
                             <h3 class="discover__title h3" style="font-weight: 700; font-size:48px;">Message</h3>
-                            <button class="button-stroke button-small header__button btnupload-none" style="margin-top: 10px; margin-left: auto;">Compose</button>
+                            <button class="button-stroke button-small header__button btnupload-none btn-compose" style="margin-top: 10px; margin-left: auto;">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;" class="icon-pen">
+                                    <rect x="3" y="17.5" width="15" height="1.66667" rx="0.833333" class="hover-icon-pen"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9048 9.5835L3.48816 10.0001C3.17559 10.3127 3 10.7366 3 11.1787V14.1668C3 15.0873 3.74619 15.8335 4.66667 15.8335H7.65482C8.09685 15.8335 8.52077 15.6579 8.83333 15.3453L9.24998 14.9287L3.9048 9.5835Z" class="hover-icon-pen"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.08594 8.40498L10.1574 3.3335L15.5026 8.67867L10.4311 13.7502L5.08594 8.40498Z" class="hover-icon-pen"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6037 1.42266C14.6274 0.446352 13.0445 0.446352 12.0682 1.42266L11.3359 2.15492L16.6811 7.5001L17.4134 6.76784C18.3897 5.79153 18.3897 4.20862 17.4134 3.23231L15.6037 1.42266Z" class="hover-icon-pen"/>
+                                </svg>                                    
+                                Compose
+                            </button>
                         </div>
-                    </div>
+                        
+              <div class="profile__wrapper js-tabs" style="width: 100%; padding-left: 0;">
+                <div class="profile__nav" style="margin-bottom: 8%;">
+                  <a class="profiles__link js-tabs-link active" href="#">Inbox</a>
+                  <a class="profiles__link js-tabs-link" href="#">Archive</a>
+                  <p style="font-size: 12px; color: #B1B5C3; padding-top: 5px;margin-left: auto;" class="width-teks">Showing messages 1 - 3 of 3 messages</p>
                 </div>
+                
+                <div class="profile__container">
+                  <!-- tab inbox -->
+                  <div class="profile__item js-tabs-item" style="display: block;">
+                    <div class="followers__list" >
+                        <div class="followers__item">
+                            <div class="followers__user">
+                              <div class="message__avatar"><img src="img/content/avatar-5.jpg" alt="Avatar"></div>
+                              <div class="card__body">
+                                <div class="card__line">
+                                <div class="card__title">Sally Fadel</div>                           
+                                <p style="font-weight: 400px;font-size: 16px;">one of my most beloved woks on your page :-))</p>          
+                                </div>
+                                
+                                <div class="card__line">
+                                <div class="followers__counter">Indonesia</div>
+                                </div>
+                                <!-- <button class="button-stroke button-small followers__button">Unfollow</button> -->
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- <div class="loader"></div> -->
+                  </div>
+                  <!-- end tab inbox -->
+
+                  <!-- tab archive -->
+                  <div class="profile__item js-tabs-item">
+                    <div class="profile__list">
+                      
+                    </div>
+                    <div class="loader"></div>
+                  </div>
+                  <!-- end tab archive -->
+                </div>
+              </div>
             </div>
+        </div>
+    </div>
 
 
             <!-- footer-->
