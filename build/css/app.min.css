@@ -4104,6 +4104,25 @@ body.dark .card__link {
 	flex-direction: column;
 	flex-grow: 1;
 }
+.cards__body {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.cards__line {
+	display: flex;
+	align-items: flex-start;
+}
+
+
+@media (max-width: 767px){
+	.cards__line{
+		display: block !important;
+		padding-top: 3px;
+	}
+}
+
 .card__line {
 	display: flex;
 	align-items: flex-start;
@@ -8515,8 +8534,8 @@ body.dark .profiles__link:hover {
 	color: #e6e8ec;
 }
 .profiles__link.active {
-	background: #353945;
-	color: #fcfcfd;
+	background: white;
+	color: black;
 }
 body.dark .profiles__link.active {
 	background: #fcfcfd;
@@ -8847,11 +8866,19 @@ body.dark .user__note {
 	}
 }
 
+.border-bottom-nav{
+	border-bottom: 1px solid #e6e8ec;
+	padding-bottom: 10px;
+}
+
+
 .followers__item {
 	display: flex;
 	padding-bottom: 32px;
 	border-bottom: 1px solid #e6e8ec;
+	
 }
+
 @media only screen and (max-width: 767px) {
 	.followers__item {
 		position: relative;
@@ -8914,12 +8941,12 @@ body.dark .followers__item {
 @media only screen and (max-width: 1179px) {
 	.followers__user {
 		flex: 0 0 100%;
-		width: 300px;
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 767px) {
 	.followers__user {
-		width: 264px;
+		width: 100%;
 		padding-right: 0;
 	}
 }
