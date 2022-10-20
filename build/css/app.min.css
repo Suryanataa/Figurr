@@ -1186,13 +1186,13 @@ img {
 	}
 }
 
-@media (max-width: 1023px){
-	.message-padding{
+@media (max-width: 1023px) {
+	.message-padding {
 		padding-left: 0;
 	}
 }
-@media (max-width: 767px){
-	.message-padding{
+@media (max-width: 767px) {
+	.message-padding {
 		padding-left: 0;
 	}
 }
@@ -4115,9 +4115,8 @@ body.dark .card__link {
 	align-items: flex-start;
 }
 
-
-@media (max-width: 767px){
-	.cards__line{
+@media (max-width: 767px) {
+	.cards__line {
 		display: block !important;
 		padding-top: 3px;
 	}
@@ -4570,7 +4569,7 @@ body.dark .discover__link.active {
 	fill: #e8e8e8 !important;
 }
 
-.icon-pen{
+.icon-pen {
 	fill: #353945;
 }
 
@@ -5694,6 +5693,30 @@ body.dark .field__textarea:focus {
 	width: calc(100% - 352px);
 	padding-right: 128px;
 }
+.profile-user .card__line.cl {
+	display: flex;
+}
+.review-nav.select {
+	display: none;
+	width: 0;
+}
+.review-nav.profile__nav {
+	display: flex;
+}
+@media only screen and (max-width: 767px) {
+	.review-nav.select {
+		display: block;
+		width: 100%;
+		margin-top: 25px;
+	}
+	.review-nav.profile__nav {
+		display: none;
+	}
+	.profile-user .card__line.cl {
+		display: block;
+	}
+}
+
 @media only screen and (max-width: 1339px) {
 	.upload__wrapper {
 		padding-right: 64px;
@@ -8237,9 +8260,6 @@ body.dark .result__category {
 	}
 }
 
-.container__outer {
-}
-
 .profile__head .container {
 	display: flex;
 	justify-content: flex-end;
@@ -8866,17 +8886,15 @@ body.dark .user__note {
 	}
 }
 
-.border-bottom-nav{
+.border-bottom-nav {
 	border-bottom: 1px solid #e6e8ec;
 	padding-bottom: 10px;
 }
-
 
 .followers__item {
 	display: flex;
 	padding-bottom: 32px;
 	border-bottom: 1px solid #e6e8ec;
-	
 }
 
 @media only screen and (max-width: 767px) {
@@ -8899,12 +8917,6 @@ body.dark .followers__item {
 	}
 }
 
-.followers__name {
-}
-@media only screen and(max-width: 1179px) {
-	.followers__name {
-	}
-}
 @media only screen and(max-width: 767px) {
 	.followers__name {
 		margin-right: 0;
@@ -8914,14 +8926,6 @@ body.dark .followers__item {
 
 .container-details {
 	display: flex;
-}
-@media only screen and(max-width: 1179px) {
-	.container-details {
-	}
-}
-@media only screen and(max-width: 767px) {
-	.container-details {
-	}
 }
 
 .review__user {

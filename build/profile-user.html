@@ -72,7 +72,7 @@
 						><a class="button-small header__button header__connect" href="connect-wallet.html">Sign Up</a>
 					</div>
 					<div class="header__item header__item_notification header__item_message js-header-item">
-						<a href="#">
+						<a href="message.html">
 							<button class="header__head js-header-head active">
 								<img src="./img/Figyer Thumbsnail/Line.svg" alt="message icon" />
 							</button>
@@ -141,7 +141,7 @@
 								<div class="header__number">rolandcole@gmail.com</div>
 							</div>
 							<div class="header__menu">
-								<a class="header__link" href="profile.html">
+								<a class="header__link" href="profile-user.html">
 									<div class="header__icon">
 										<svg class="icon icon-user">
 											<use xlink:href="#icon-user"></use>
@@ -193,23 +193,21 @@
                 </div>
                 <button class="button-small profile__button js-profile-save">Save photo</button>
               </div>
-              <!-- <div class="profile__btns">
+              <div class="profile__btns">
                 <button class="button-stroke button-small profile__button js-profile-load"><span>Edit cover photo</span>
-                  <svg class="icon icon-edit">
-                    <use xlink:href="#icon-edit"></use>
-                  </svg>
-                </button><a class="button-stroke button-small profile__button" href="profile-edit.html"> <span>Edit profile</span>
                   <svg class="icon icon-image">
                     <use xlink:href="#icon-image"></use>
-                  </svg></a>
-              </div> -->
+                  </svg>
+                </button>
+                
+              </div>
             </div>
           </div>
           <div class="profile__body">
             <div class="profile__center center">
               <div class="user">
                 <div class="user__avatar"><img src="img/content/avatar-big.jpg" alt="Avatar"></div>
-                <div class="user__name">Yuschav Arly</div>
+                <div class="user__name">Ronald Cole</div>
                 <div class="user__code">
                   <div class="user__number">Bali - Indonesia</div>
                   <!-- <button class="user__copy">
@@ -218,13 +216,13 @@
                     </svg>
                   </button> -->
                 </div>
-                <div class="user__info">A wholesome farm owner in Montana. Upcoming gallery solo show in Jakarta</div><a class="user__site" href="https://ui8.net" target="_blank">
+                <div class="user__info">A wholesome farm owner in Bali. Upcoming gallery solo show in Jakarta</div><a class="user__site" href="https://ui8.net" target="_blank">
                   <svg class="icon icon-globe">
                     <use xlink:href="#icon-globe"></use>
                   </svg>https://ui8.net</a>
                 <div class="user__control">
                   <div class="user__btns">
-                    <button class="button-stroke button-small user__button js-user-follow active"><span>Unfollow</span><span>Follow</span></button>
+                    <a href="profile-edit.html" class="button-stroke button-small" ><span>Edit Profile</span></a>
                     <a class="button-circle-work button-small user__button" href="#"> 
                       <!-- <svg class="icon icon-report">
                         <use xlink:href="#icon-report"></use>
@@ -270,11 +268,11 @@
                 </div>
                     <div class="card__line" style="margin-left: 20px; margin-right:20px">
                       <p>Followers</p>
-                      <p style="margin-left: auto;">1.150</p>
+                      <p style="margin-left: auto;">1.154</p>
                     </div>
                     <div class="card__line" style="margin-left: 20px; margin-right:20px">
                       <p>Following</p>
-                      <p style="margin-left: auto;">1.051</p>
+                      <p style="margin-left: auto;">1031</p>
                     </div>
                 <div class="user__note">
                   <p style="margin-bottom: 15px;">Member since Mar 15, 2021</p>
@@ -293,11 +291,9 @@
                   <a class="profile__link js-tabs-link" href="#">Collections</a>
                   <a class="profile__link js-tabs-link" href="#">Likes</a>
                   <a class="profile__link js-tabs-link" href="#">Review</a>
-                  <!-- <a class="profile__link js-tabs-link" href="#">Following</a>
-                  <a class="profile__link js-tabs-link" href="#">Followers</a> -->
                 </div>
+                
                 <div class="profile__container">
-
                   <!-- tab card work -->
                   <div class="profile__item js-tabs-item" style="display: block;">
                     <div class="profile__list">
@@ -498,14 +494,10 @@
                         <div class="card__preview"><img srcSet="img/content/card-pic-1@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Purple Haze - Lucas Leibholz.png" alt="Card preview"/>
                           <div class="card__control">
                             <!-- <div class="status-green card__category">purchasing !</div> -->
-                            <button class="card__collections">
+                            <button class="card__collections" onclick="location.href='collection.html'">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
-                                </svg>
-                                
-                              <!-- <svg class="icon icon-heart">
-                                <use xlink:href="#icon-heart"></use>
-                              </svg> -->
+                              </svg>
                             </button>
                             <!-- <a class="button-small card__button js-popup-open" href="#popup-bid" data-effect="mfp-zoom-in"><span>Place a bid</span>
                               <svg class="icon icon-scatter-up">
@@ -517,7 +509,7 @@
                                     <use xlink:href="#icon-scatter-up"></use>
                                   </svg></a> -->
                                   <div class="text-card-preview" style="color: white;width: 80%;">
-                                    <p style="font-weight: 600; font-size: 24px;white-space: nowrap;">Painting</p>
+                                    <p style="font-weight: 600; font-size: 24px;white-space: nowrap;">Jimmy Hendrix</p>
                                     <div class="card__line">
                                       <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                       <div class="" style="display: flex;justify-content:flex-end">
@@ -560,7 +552,7 @@
                           <img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/Thumbsnail Figerr -fx/Digital Portraits- Athletes - Abdelrahman Taymour.png" alt="Card preview"/>
                           <div class="card__control">
                             <!-- <div class="status-green card__category">purchasing !</div> -->
-                            <button class="card__collections">
+                            <button class="card__collections" onclick="location.href='collection.html'">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
                                 </svg>
@@ -579,7 +571,7 @@
                                     <use xlink:href="#icon-scatter-up"></use>
                                   </svg></a> -->
                                   <div class="text-card-preview" style="color: white;width: 80%;">
-                                    <p style="font-weight: 600; font-size: 24px;white-space: nowrap;">Painting</p>
+                                    <p style="font-weight: 600; font-size: 24px;white-space: nowrap;">Mo Salah</p>
                                     <div class="card__line">
                                       <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                       <div class="" style="display: flex;justify-content:flex-end">
@@ -621,7 +613,7 @@
                         <div class="card__preview"><img srcSet="img/content/card-pic-2@2x.jpg 2x" src="img/Figyer Thumbsnail/The Artist/Berkay Doglar/Rolling Stone/5.png" alt="Card preview"/>
                           <div class="card__control">
                             <!-- <div class="status-green card__category">purchasing !</div> -->
-                            <button class="card__collections">
+                            <button class="card__collections" onclick="location.href='collection.html'">
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.832 5L10.3407 4.1811C9.8575 3.37578 9.0572 2.80696 8.12559 2.6882C7.36432 2.59116 6.38984 2.5 5.41536 2.5C4.7353 2.5 4.05523 2.5444 3.44764 2.60421C2.10844 2.73604 1.09826 3.78017 0.99534 5.1219C0.908162 6.2584 0.832031 7.86274 0.832031 10C0.832031 11.5171 0.887271 12.8685 0.957523 13.9737C1.075 15.8219 2.51214 17.2446 4.36092 17.3512C5.76505 17.4321 7.64431 17.5 9.9987 17.5C12.3531 17.5 14.2323 17.4321 15.6365 17.3512C17.4853 17.2446 18.9224 15.8219 19.0399 13.9737C19.1101 12.8685 19.1654 11.5171 19.1654 10C19.1654 9.13239 19.1152 8.31496 19.0496 7.61737C18.9238 6.2776 17.8878 5.24158 16.548 5.11572C15.8504 5.05018 15.033 5 14.1654 5H10.832Z" fill="#777e90"/>
                                 </svg>
@@ -640,7 +632,7 @@
                                     <use xlink:href="#icon-scatter-up"></use>
                                   </svg></a> -->
                                   <div class="text-card-preview" style="color: white;width: 80%;">
-                                    <p style="font-weight: 600; font-size: 24px;white-space: nowrap;">Painting</p>
+                                    <p style="font-weight: 600; font-size: 24px;white-space: nowrap;">The Rollis</p>
                                     <div class="card__line">
                                       <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                       <div class="" style="display: flex;justify-content:flex-end">
@@ -700,7 +692,7 @@
                                 <use xlink:href="#icon-scatter-up"></use>
                               </svg></a> -->
                               <div class="text-card-preview" style="color: white;width: 80%;">
-                                <p style="font-weight: 600; font-size: 24px;white-space: nowrap;">Painting</p>
+                                <p style="font-weight: 600; font-size: 24px;white-space: nowrap;">The Band</p>
                                 <div class="card__line">
                                   <p style="font-size: 12px; margin-right: auto;">Shahul Hameed</p>
                                   <div class="" style="display: flex;justify-content:flex-end">
@@ -871,19 +863,19 @@
                   <!-- end tab card likes -->
 
                   <!-- tab review -->
-                  <div class="profile__item js-tabs-item">
+                  <div class="profile__item js-tabs-item profile-user">
                     <div class="followers">
                     <div class="followers__list">
 
-                      <div class="card__line" style="margin-bottom: 20px;">
+                      <div class="card__line cl" style="margin-bottom: 20px;">
                         <p style="font-size:24px; font-weight:600; margin-right: auto;">Your Review</p>
                         
-                        <p style="padding-top:10px;" class="width-teks">What is the overall quality of the artwork?</p>
+                        <p style="padding-top:10px;" class="width-teks">the overall quality of the artwork?</p>
                         
                       </div>
 
-                      <div class="card__line" style="margin-bottom: 20px;">
-                        <div class="card__line" style="margin-right: auto; padding-top: 20px;">
+                      <div class="card__line cl" style="margin-bottom: 20px;">
+                        <div class="card__line cl" style="margin-right: auto; padding-top: 20px;">
                           <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.1246 1.69182C15.6457 0.484238 17.3579 0.484238 17.879 1.69182L21.1491 9.26964C21.3697 9.78097 21.8555 10.128 22.4108 10.1709L30.7967 10.8189C32.1422 10.9228 32.6768 12.6119 31.6362 13.4711L25.3296 18.678C24.8848 19.0453 24.69 19.6351 24.8285 20.1951L26.7694 28.0376C27.0886 29.3273 25.6973 30.3646 24.5524 29.6906L17.2628 25.3991C16.7931 25.1226 16.2105 25.1226 15.7408 25.3991L8.45122 29.6906C7.30627 30.3646 5.91498 29.3273 6.23416 28.0376L8.17507 20.1951C8.31365 19.6351 8.11884 19.0453 7.67401 18.678L1.36743 13.4711C0.326788 12.6119 0.861395 10.9228 2.20688 10.8189L10.5928 10.1709C11.1481 10.128 11.6339 9.78097 11.8545 9.26964L15.1246 1.69182Z" fill="#FFD166"/>
                           </svg>
@@ -909,16 +901,18 @@
                         </p>
                       </div>
 
-                        
-
-                      <div style="margin-bottom: 20px;" class="card__line">
+                      <div style="margin-bottom: 20px;" class="card__line cl">
                         <p style="font-size:24px; font-weight:600; margin-right: auto;">3 comments</p>
-                        <div style="width: 150px;">
-                          <select class="select">
-                            <option>Newest</option>
-                            <option>Long ago</option>
-                          </select>
+                        <div class="review-nav profile__nav">
+                          <a class="profile__link js-tabs-link active" href="#">Review about you</a>
+                          <a class="profile__link js-tabs-link" href="#">Review by you</a>
                         </div>
+                  
+                          <select class="review-nav select ">
+                            <option>Review about you</option>
+                            <option>Review by you</option>
+                          </select>
+                        
                       </div>
 
                       <div class="followers__item">
