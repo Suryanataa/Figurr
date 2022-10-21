@@ -1709,6 +1709,31 @@ body.dark .button-stroke:hover {
 	fill: #fcfcfd;
 }
 
+.button-circle-phone {
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #45b26b inset;
+	background: #45b26b;
+	transition: all 0.2s;
+}
+
+.button-circle-phone:hover {
+	background: #336b47;
+	box-shadow: 0 0 0 2px #336b47 inset;
+}
+
+.button-circle-phone .icon {
+	fill: #fcfcfd;
+	transition: fill 0.2s;
+}
+
+.button-circle-phone:hover .icon {
+	fill: #fcfcfd;
+}
+
 .button-position-close {
 	position: absolute;
 	top: 6%;
@@ -1789,6 +1814,9 @@ body.dark .button-stroke:hover {
 .button-circle-stroke:hover .icon {
 	fill: #fcfcfd;
 }
+
+
+
 body.dark .button-circle-stroke {
 	box-shadow: 0 0 0 2px #353945 inset;
 }
@@ -5024,6 +5052,23 @@ body.dark .subscription__input:focus {
 .subscription__input::placeholder {
 	color: #777e90;
 }
+.subscription__button {
+	width: 120px;
+	height: 48px;
+	border-radius: 90px;
+	background: #3772ff;
+	color: white;
+	transition: background 0.2s;
+}
+.subscription__button .icon {
+	width: 14px;
+	height: 14px;
+	fill: #fcfcfd;
+}
+.subscription__button:hover {
+	background: #044eff;
+}
+
 .subscription__btns {
 	position: absolute;
 	top: 8px;
@@ -8780,6 +8825,16 @@ body.dark .user__direction span:hover .icon {
 	justify-content: center;
 	align-items: center;
 }
+
+.max-w-title{
+	max-width: 50%;
+}
+@media (max-width:767px){
+	.max-w-title{
+		max-width: 100%;
+	}
+}
+
 .user__button .icon {
 	width: 20px;
 	height: 20px;
@@ -9025,6 +9080,15 @@ body.dark .followers__item {
 }
 @media (max-width: 767px) {
 	.width-teks {
+		max-width: 100px;
+		display: none;
+	}
+}
+.width-text {
+	max-width: auto;
+}
+@media (max-width: 398px) {
+	.width-text {
 		max-width: 100px;
 		display: none;
 	}
