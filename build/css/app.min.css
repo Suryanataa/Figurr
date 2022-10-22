@@ -1815,8 +1815,6 @@ body.dark .button-stroke:hover {
 	fill: #fcfcfd;
 }
 
-
-
 body.dark .button-circle-stroke {
 	box-shadow: 0 0 0 2px #353945 inset;
 }
@@ -4598,7 +4596,10 @@ body.dark .discover__link.active {
 }
 
 .icon-pen {
-	fill: #353945;
+	fill: rgba(119, 126, 144, 1);
+}
+.icon-pen2 {
+	background-image: url("/build/img/Figyer Thumbsnail/pen.svg");
 }
 
 .discover__icon {
@@ -5715,7 +5716,6 @@ body.dark .field__textarea:focus {
 		padding-top: 80px;
 	}
 }
-
 @media only screen and (max-width: 767px) {
 	.upload {
 		padding-top: 64px;
@@ -5727,12 +5727,40 @@ body.dark .field__textarea:focus {
 	align-items: flex-start;
 	flex-direction: row-reverse;
 }
+.card__favorites {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 32px;
+	height: 32px;
+	background: #fcfcfd;
+	box-shadow: 0px 8px 16px rgba(15, 15, 15, 0.2);
+	border-radius: 50%;
+}
 @media only screen and (max-width: 767px) {
 	.upload__center {
 		display: block;
 	}
 }
-
+.sup-rating {
+	width: 100px;
+}
+.sub-rating {
+	margin: -24px 0 0 28px;
+	color: rgba(119, 126, 144, 1);
+}
+@media only screen and (max-width: 767px) {
+	.edit-button {
+		padding: 0 50px;
+	}
+	.sup-rating {
+		width: 100px;
+	}
+	.sub-rating {
+		margin: -24px 0 0 28px;
+		color: rgba(119, 126, 144, 1);
+	}
+}
 .upload__wrapper {
 	flex: 0 0 calc(100% - 352px);
 	width: calc(100% - 352px);
@@ -8846,11 +8874,11 @@ body.dark .user__direction span:hover .icon {
 	align-items: center;
 }
 
-.max-w-title{
+.max-w-title {
 	max-width: 50%;
 }
-@media (max-width:767px){
-	.max-w-title{
+@media (max-width: 767px) {
+	.max-w-title {
 		max-width: 100%;
 	}
 }
