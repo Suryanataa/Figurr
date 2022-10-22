@@ -1733,18 +1733,18 @@ body.dark .button-stroke:hover {
 .button-circle-phone:hover .icon {
 	fill: #fcfcfd;
 }
-.message-section{
+.message-section {
 	max-width: 80%;
 }
-@media (max-width:767px){
-	.message-section{
+@media (max-width: 767px) {
+	.message-section {
 		margin-top: 30%;
 		max-width: 100%;
 	}
-	.button-circle-phone{
-		width:100%;
+	.button-circle-phone {
+		width: 100%;
 		border-radius: 90px;
-		position:absolute;
+		position: absolute;
 		top: 100px;
 		right: 2%;
 	}
@@ -1756,8 +1756,6 @@ body.dark .button-stroke:hover {
 		color: white;
 		transition: background 0.2s;
 	}
-
-
 }
 
 .button-position-close {
@@ -8901,11 +8899,17 @@ body.dark .user__direction span:hover .icon {
 }
 
 .max-w-title {
-	max-width: 50%;
+	max-width: 40%;
+}
+@media (max-width: 1179px) {
+	.max-w-title {
+		max-width: 50%;
+	}
 }
 @media (max-width: 767px) {
 	.max-w-title {
 		max-width: 100%;
+		font-size: 45px;
 	}
 }
 
