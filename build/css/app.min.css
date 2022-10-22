@@ -1733,6 +1733,32 @@ body.dark .button-stroke:hover {
 .button-circle-phone:hover .icon {
 	fill: #fcfcfd;
 }
+.message-section{
+	max-width: 80%;
+}
+@media (max-width:767px){
+	.message-section{
+		margin-top: 30%;
+		max-width: 100%;
+	}
+	.button-circle-phone{
+		width:100%;
+		border-radius: 90px;
+		position:absolute;
+		top: 100px;
+		right: 2%;
+	}
+	.subscription__button {
+		width: 100% !important;
+		height: 48px;
+		border-radius: 90px;
+		background: #3772ff;
+		color: white;
+		transition: background 0.2s;
+	}
+
+
+}
 
 .button-position-close {
 	position: absolute;
@@ -9091,7 +9117,7 @@ body.dark .followers__item {
 .width-text {
 	max-width: auto;
 }
-@media (max-width: 398px) {
+@media (max-width: 767px) {
 	.width-text {
 		max-width: 100px;
 		display: none;
