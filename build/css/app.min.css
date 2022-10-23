@@ -1810,7 +1810,7 @@ body.dark .button-stroke:hover {
 	}
 	.button-position-more {
 		position: absolute;
-		bottom: 8.4%;
+		top:85.6%;
 		left: 55%;
 	}
 
@@ -1872,6 +1872,51 @@ body.dark .button-stroke:hover {
 	.actions__body {
 		position: absolute;
 		right: 35% !important;
+		bottom: calc(20% + 12px) !important;
+		width: 208px;
+		padding: 16px 16px 20px;
+		border-radius: 12px;
+		background: #fcfcfd;
+		box-shadow: 0px 16px 64px -16px rgba(31, 47, 70, 0.3);
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+		transition: all 0.2s;
+	}
+}
+@media (max-width: 650px) {
+	.button-position-close {
+		display: none;
+	}
+	.button-position-file {
+		position: absolute;
+		top: 81%;
+		left: 32%;
+	}
+	.button-position-like {
+		position: absolute;
+		top: 81%;
+		left: 45%;
+	}
+	.button-position-more {
+		position: absolute;
+		top: 81%;
+		left: 58%;
+	}
+
+	.background-options{
+		position: absolute;
+		top: 80%;
+		width: 200px;
+		height: 60px;
+		border-radius: 32px;
+		background-color: #fcfcfd;
+	}
+	
+	.actions__body {
+		position: absolute;
+		right: 30% !important;
 		bottom: calc(20% + 12px) !important;
 		width: 208px;
 		padding: 16px 16px 20px;
