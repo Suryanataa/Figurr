@@ -1760,17 +1760,17 @@ body.dark .button-stroke:hover {
 
 .button-position-close {
 	position: absolute;
-	top: 6%;
+	top: 2%;
 	left: 90%;
 }
 .button-position-file {
 	position: absolute;
-	top: 11%;
+	top: 8%;
 	left: 90%;
 }
 .button-position-like {
 	position: absolute;
-	top: 16%;
+	top: 14%;
 	left: 90%;
 }
 .button-position-more {
@@ -1778,32 +1778,55 @@ body.dark .button-stroke:hover {
 	bottom: 75%;
 	left: 90%;
 }
+.actions__body {
+	position: absolute;
+	right: 0;
+	bottom: calc(55% + 12px) !important;
+	width: 208px;
+	padding: 16px 16px 20px;
+	border-radius: 12px;
+	background: #fcfcfd;
+	box-shadow: 0px 16px 64px -16px rgba(31, 47, 70, 0.3);
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: translateY(3px);
+	transform: translateY(3px);
+	transition: all 0.2s;
+}
 
 @media (max-width: 1023px) {
 	.button-position-close {
-		position: absolute;
-		top: 11%;
-		left: 90%;
+		display: none;
 	}
 	.button-position-file {
 		position: absolute;
-		top: 18%;
-		left: 90%;
+		top: 85.6%;
+		left: 40%;
 	}
 	.button-position-like {
 		position: absolute;
-		top: 25%;
-		left: 90%;
+		top: 85.6%;
+		left: 47.5%;
 	}
 	.button-position-more {
 		position: absolute;
-		bottom: 62.5%;
-		left: 90%;
+		bottom: 8.4%;
+		left: 55%;
 	}
+
+	.background-options{
+		position: absolute;
+		top: 85%;
+		width: 200px;
+		height: 60px;
+		border-radius: 32px;
+		background-color: #fcfcfd;
+	}
+	
 	.actions__body {
 		position: absolute;
-		right: 0;
-		bottom: calc(10% + 12px);
+		right: 38% !important;
+		bottom: calc(15% + 12px) !important;
 		width: 208px;
 		padding: 16px 16px 20px;
 		border-radius: 12px;
@@ -1816,6 +1839,143 @@ body.dark .button-stroke:hover {
 		transition: all 0.2s;
 	}
 }
+
+@media (max-width: 768px) {
+	.button-position-close {
+		display: none;
+	}
+	.button-position-file {
+		position: absolute;
+		top: 81%;
+		left: 38%;
+	}
+	.button-position-like {
+		position: absolute;
+		top: 81%;
+		left: 47%;
+	}
+	.button-position-more {
+		position: absolute;
+		top: 81%;
+		left: 55.5%;
+	}
+
+	.background-options{
+		position: absolute;
+		top: 80%;
+		width: 200px;
+		height: 60px;
+		border-radius: 32px;
+		background-color: #fcfcfd;
+	}
+	
+	.actions__body {
+		position: absolute;
+		right: 35% !important;
+		bottom: calc(20% + 12px) !important;
+		width: 208px;
+		padding: 16px 16px 20px;
+		border-radius: 12px;
+		background: #fcfcfd;
+		box-shadow: 0px 16px 64px -16px rgba(31, 47, 70, 0.3);
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+		transition: all 0.2s;
+	}
+}
+
+@media (max-width: 425px) {
+	.button-position-close {
+		display: none;
+	}
+	.button-position-file {
+		position: absolute;
+		top: 82%;
+		left: 27%;
+	}
+	.button-position-like {
+		position: absolute;
+		top: 82%;
+		left: 44%;
+	}
+	.button-position-more {
+		position: absolute;
+		top: 82%;
+		left: 60%;
+	}
+	.background-options{
+		position: absolute;
+		top: 80%;
+		width: 200px;
+		height: 60px;
+		border-radius: 32px;
+		background-color: #fcfcfd;
+	}
+	
+	.actions__body {
+		position: absolute;
+		right: 21% !important;
+		bottom: calc(20% + 12px) !important;
+		width: 208px;
+		padding: 16px 16px 20px;
+		border-radius: 12px;
+		background: #fcfcfd;
+		box-shadow: 0px 16px 64px -16px rgba(31, 47, 70, 0.3);
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+		transition: all 0.2s;
+	}
+}
+
+@media (max-width: 375px) {
+	.button-position-close {
+		display: none;
+	}
+	.button-position-file {
+		position: absolute;
+		top: 77%;
+		left: 25%;
+	}
+	.button-position-like {
+		position: absolute;
+		top: 77%;
+		left: 42%;
+	}
+	.button-position-more {
+		position: absolute;
+		top: 77%;
+		left: 60%;
+	}
+	.background-options{
+		position: absolute;
+		top: 75%;
+		width: 180px;
+		height: 60px;
+		border-radius: 32px;
+		background-color: #fcfcfd;
+	}
+	
+	.actions__body {
+		position: absolute;
+		right: 16% !important;
+		bottom: calc(25% + 12px) !important;
+		width: 208px;
+		padding: 16px 16px 20px;
+		border-radius: 12px;
+		background: #fcfcfd;
+		box-shadow: 0px 16px 64px -16px rgba(31, 47, 70, 0.3);
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(3px);
+		transform: translateY(3px);
+		transition: all 0.2s;
+	}
+}
+
 
 .button-circle-stroke {
 	flex: 0 0 48px;
@@ -8994,7 +9154,7 @@ body.dark .user__note {
 		display: block;
 		padding: 0 0 0 0;
 		border: none;
-		width: 50px;
+		width: 100%;
 		margin-left: 5%;
 	}
 }
