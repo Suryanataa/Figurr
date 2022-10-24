@@ -1758,6 +1758,49 @@ body.dark .button-stroke:hover {
 	}
 }
 
+.button-circle-pen {
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+	margin-left: 3%;
+	padding: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #3772FF inset;
+	background: #3772FF;
+	transition: all 0.2s;
+}
+
+.button-circle-pen:hover {
+	background: #22469b;
+	box-shadow: 0 0 0 2px #22469b inset;
+}
+
+.button-circle-pen .icon {
+	fill: #fcfcfd;
+	transition: fill 0.2s;
+}
+
+.button-circle-pen:hover .icon {
+	fill: #fcfcfd;
+}
+
+@media (max-width: 767px) {
+	
+	.button-circle-pen {
+		width: 100%;
+		border-radius: 90px;
+		height: 52px;
+		position: absolute;
+		top: 100px;
+		right: 2%;
+	}
+
+	.border-top-collection{
+		margin-top: 80px !important;
+	}
+	
+}
+
 .button-position-close {
 	position: absolute;
 	top: 2%;
@@ -4213,6 +4256,12 @@ body.dark .field__textarea:focus {
 
 .field_textarea {
 	font-size: 0;
+}
+
+@media (max-width: 767px){
+	.margin-bottom-card{
+		margin-bottom: 11% !important;
+	}
 }
 
 .card {
