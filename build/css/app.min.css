@@ -1810,11 +1810,11 @@ body.dark .button-stroke:hover {
 	}
 	.button-position-more {
 		position: absolute;
-		top:85.6%;
+		top: 85.6%;
 		left: 55%;
 	}
 
-	.background-options{
+	.background-options {
 		position: absolute;
 		top: 85%;
 		width: 200px;
@@ -1822,7 +1822,7 @@ body.dark .button-stroke:hover {
 		border-radius: 32px;
 		background-color: #fcfcfd;
 	}
-	
+
 	.actions__body {
 		position: absolute;
 		right: 38% !important;
@@ -1860,7 +1860,7 @@ body.dark .button-stroke:hover {
 		left: 55.5%;
 	}
 
-	.background-options{
+	.background-options {
 		position: absolute;
 		top: 80%;
 		width: 200px;
@@ -1868,7 +1868,7 @@ body.dark .button-stroke:hover {
 		border-radius: 32px;
 		background-color: #fcfcfd;
 	}
-	
+
 	.actions__body {
 		position: absolute;
 		right: 35% !important;
@@ -1905,7 +1905,7 @@ body.dark .button-stroke:hover {
 		left: 58%;
 	}
 
-	.background-options{
+	.background-options {
 		position: absolute;
 		top: 80%;
 		width: 200px;
@@ -1913,7 +1913,7 @@ body.dark .button-stroke:hover {
 		border-radius: 32px;
 		background-color: #fcfcfd;
 	}
-	
+
 	.actions__body {
 		position: absolute;
 		right: 30% !important;
@@ -1950,7 +1950,7 @@ body.dark .button-stroke:hover {
 		top: 82%;
 		left: 60%;
 	}
-	.background-options{
+	.background-options {
 		position: absolute;
 		top: 80%;
 		width: 200px;
@@ -1958,7 +1958,7 @@ body.dark .button-stroke:hover {
 		border-radius: 32px;
 		background-color: #fcfcfd;
 	}
-	
+
 	.actions__body {
 		position: absolute;
 		right: 21% !important;
@@ -1995,7 +1995,7 @@ body.dark .button-stroke:hover {
 		top: 77%;
 		left: 60%;
 	}
-	.background-options{
+	.background-options {
 		position: absolute;
 		top: 75%;
 		width: 180px;
@@ -2003,7 +2003,7 @@ body.dark .button-stroke:hover {
 		border-radius: 32px;
 		background-color: #fcfcfd;
 	}
-	
+
 	.actions__body {
 		position: absolute;
 		right: 16% !important;
@@ -2020,7 +2020,6 @@ body.dark .button-stroke:hover {
 		transition: all 0.2s;
 	}
 }
-
 
 .button-circle-stroke {
 	flex: 0 0 48px;
@@ -2252,6 +2251,11 @@ body.dark .header {
 }
 @media only screen and (max-width: 1179px) {
 	.header__logo {
+		margin-right: 62px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.header__logo {
 		margin-right: auto;
 	}
 }
@@ -2362,7 +2366,7 @@ body.dark .header__nav {
 }
 @media only screen and (max-width: 1023px) {
 	.header__search {
-		display: none;
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 767px) {
@@ -2435,7 +2439,15 @@ body.dark .header__input:focus {
 }
 .header__item_notification {
 	display: none;
-	margin-right: 24px;
+	margin-right: 14px;
+}
+.header__item_message {
+	margin-left: 0;
+}
+@media only screen and (max-width: 1023px) {
+	.header__item_message {
+		margin-left: 20px;
+	}
 }
 @media only screen and (max-width: 767px) {
 	.header__item_notification {
@@ -4596,9 +4608,6 @@ body.dark .card__status span {
 	color: #23262f;
 	transition: color 0.2s;
 }
-body.dark .collections__subtitle {
-	color: #fcfcfd;
-}
 
 .collections__item:hover .collections__subtitle {
 	color: #3772ff;
@@ -4614,9 +4623,6 @@ body.dark .collections__subtitle {
 	align-items: center;
 	margin-right: auto;
 	color: #353945;
-}
-body.dark .collections__user {
-	color: #e6e8ec;
 }
 .collections__user span {
 	font-weight: 500;
@@ -4639,7 +4645,15 @@ body.dark .collections__user {
 .collections__counter {
 	flex-shrink: 0;
 }
-
+.edit__inner {
+	padding: 48px;
+	background: #fcfcfd;
+	box-shadow: 0px 64px 64px rgb(31 47 70 / 12%);
+	border-radius: 16px;
+	margin: 0 0 0 200px;
+	height: 296px;
+	width: 256px;
+}
 .collections__slider {
 	position: static;
 	visibility: hidden;
@@ -5873,7 +5887,7 @@ body.dark .field__textarea:focus {
 }
 @media only screen and (max-width: 767px) {
 	.preview__inner {
-		padding: 28px;
+		padding: 28px 50px 28px 28px;
 		background: #fcfcfd;
 		box-shadow: none;
 		border-radius: 0;
@@ -9413,6 +9427,7 @@ body.dark .followers__item {
 
 .details__center {
 	max-width: 896px;
+	padding: 0 124px 0 60px;
 }
 
 .details__top {
