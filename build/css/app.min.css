@@ -4438,6 +4438,71 @@ body.dark .card__link {
 	}
 }
 
+@media (min-width:768px){
+	.message-position{
+		padding-left: 15px;
+	}
+}
+
+@media (max-width:767px){
+	.border-bottom-message{
+		border-bottom: 1px solid #e6e8ec !important;
+		padding-bottom: 200px !important;
+	}
+
+	.message-position{
+		position: absolute;
+		max-width: 100% !important;
+		top: 35%;
+		left: 1px;
+	}
+	
+	.date-position{
+		position: absolute;
+		top: 85%;
+		left: 5%;
+	}
+}
+
+@media (max-width:425px){
+	.border-bottom-message{
+		border-bottom: 1px solid #e6e8ec !important;
+		padding-bottom: 200px !important;
+	}
+
+	.message-position{
+		position: absolute;
+		max-width: 100% !important;
+		top: 35%;
+		left: 1px;
+	}
+	
+	.date-position{
+		position: absolute;
+		top: 85%;
+		left: 5%;
+	}
+}
+@media (max-width:375px){
+	.border-bottom-message{
+		border-bottom: 1px solid #e6e8ec !important;
+		padding-bottom: 75% !important;
+	}
+
+	.message-position{
+		position: absolute;
+		max-width: 100% !important;
+		top: 30%;
+		left: 1px;
+	}
+	
+	.date-position{
+		position: absolute;
+		top: 85%;
+		left: 5%;
+	}
+}
+
 .card__line {
 	display: flex;
 	align-items: flex-start;
@@ -4885,6 +4950,11 @@ body.dark .discover__link.active {
 
 .btn-compose:hover .icon-pen {
 	fill: #e8e8e8 !important;
+}
+@media (max-width:767px){
+	.btn-compose{
+		width: 100%;
+	}
 }
 
 .icon-pen {
@@ -9271,6 +9341,8 @@ body.dark .user__note {
 	border-bottom: 1px solid #e6e8ec;
 	padding-bottom: 10px;
 }
+
+
 
 .followers__item {
 	display: flex;
