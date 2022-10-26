@@ -170,28 +170,13 @@
 			</header>
 
 			<div class="outer__inner">
-				<!-- <div class="control">
-					<div class="control__center center">
-						<a class="button-stroke button-small control__button" href="profile-user.html">
-							<svg class="icon icon-arrow-prev">
-								<use xlink:href="#icon-arrow-prev"></use></svg
-							><span>Back to profile</span></a
-						>
-						<div class="breadcrumbs">
-							<ul class="breadcrumbs">
-								<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="profile.html">Home</a></li>
-								<li class="breadcrumbs__item">Edit Profile</li>
-							</ul>
-						</div>
-					</div>
-				</div> -->
 				<div class="section-pt80 details" style="display: flex">
 					<div class="edit__inner">tes</div>
 					<div class="details__center center">
 						<div class="details__top">
 							<h1 class="details__title h2">Personal info</h1>
 						</div>
-						<div class="details__row">
+						<div class="details__row" style="flex-wrap: wrap">
 							<div class="details__col">
 								<div class="details__user">
 									<div class="details__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
@@ -221,15 +206,10 @@
 													<input class="field__input" type="text" name="url" placeholder="Enter your last name" required />
 												</div>
 											</div>
-											<div class="field field_textarea">
-												<div class="field__label">Bio</div>
-												<div class="field__wrap">
-													<textarea class="field__textarea" name="bio" placeholder="About yourselt in a few words" required></textarea>
-												</div>
-											</div>
 										</div>
 									</div>
-									<div class="details__item">
+								</div>
+								<!-- <div class="details__item">
 										<div class="details__category">Social</div>
 										<div class="details__fieldset">
 											<div class="field">
@@ -253,9 +233,8 @@
 												<use xlink:href="#icon-plus-circle"></use></svg
 											><span>Add more social account</span>
 										</button>
-									</div>
-								</div>
-								<div class="details__note">To update your settings you should sign message through your wallet. Click 'Update profile' then sign the message</div>
+									</div> -->
+								<!-- <div class="details__note">To update your settings you should sign message through your wallet. Click 'Update profile' then sign the message</div>
 								<div class="details__btns">
 									<button class="button details__button">Update Profile</button
 									><a class="details__clear" href="#">
@@ -263,6 +242,102 @@
 											<use xlink:href="#icon-circle-close"></use></svg
 										>Clear all</a
 									>
+								</div> -->
+							</div>
+						</div>
+						<div class="datails__row" style="width: 100%">
+							<div class="field" style="margin-bottom: 30px">
+								<div class="field__label">email</div>
+								<div class="field__wrap">
+									<input class="field__input" type="email" name="url" placeholder="Enter your Email" required />
+								</div>
+							</div>
+							<div class="field field_textarea">
+								<div class="field__label">Bio</div>
+								<div class="field__wrap">
+									<textarea style="height: 156px" class="field__textarea" name="bio" placeholder="About yourselt in a few words" required></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="details__row" style="margin: 30px 0 0 0">
+							<div class="details_col" style="width: 100%; margin-right: 10px">
+								<div class="details__list">
+									<div class="details__item">
+										<div class="details__fieldset">
+											<div class="field__label">lives in</div>
+											<div class="field__wrap">
+												<select class="select">
+													<option>Location</option>
+													<option>Manual</option>
+													<option>Digital</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details_col" style="width: 100%; margin-left: 10px">
+								<div class="details__list">
+									<div class="details__item">
+										<div class="details__fieldset">
+											<div class="field" style="margin-bottom: 30px">
+												<div class="field__label">city</div>
+												<div class="field__wrap">
+													<input class="field__input" type="text" name="url" required />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details__row" style="margin: 30px 0 0 0; align-items: center">
+							<div class="details_col" style="width: 30%; margin-right: 10px">
+								<div class="details__list">
+									<div class="details__item">
+										<div class="details__fieldset">
+											<div class="field__label">code</div>
+											<div class="field__wrap">
+												<select class="select">
+													<option>+1</option>
+													<option>Manual</option>
+													<option>Digital</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details_col" style="width: 100%; margin-left: 10px">
+								<div class="details__list">
+									<div class="details__item">
+										<div class="details__fieldset">
+											<div class="field" style="margin-bottom: 30px">
+												<div class="field__label">phone</div>
+												<div class="field__wrap">
+													<input class="field__input" type="number" name="url" required />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details_col" style="width: 95%; margin-left: 20px; padding-bottom: 18px">
+								<div class="details__item">
+									<div class="details__fieldset" style="display: flex; justify-content: space-between">
+										<div class="label_switch">Show or dont show number</div>
+										<label class="switch" style="margin-left: 15px">
+											<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="datails__row" style="width: 100%">
+							<div class="field" style="margin-bottom: 30px">
+								<div class="field__label">website</div>
+								<div class="field__wrap">
+									<input class="field__input" type="url" name="url" placeholder="Your site URL" required />
 								</div>
 							</div>
 						</div>
@@ -274,25 +349,19 @@
 				<div class="footer__center center">
 					<div class="footer__row">
 						<div class="footer__col">
-							<a class="footer__logo" href="index.html"><img class="some-icon" src="img/logo-dark.png" alt="Crypter NFT" /><img class="some-icon-dark" src="img/logo-light.png" alt="Crypter NFT" /></a>
-							<div class="footer__info">The New Creative Economy.</div>
-							<div class="footer__theme">
-								<div class="footer__details">Dark theme</div>
-								<label class="theme js-theme theme_big">
-									<input class="theme__input" type="checkbox" /><span class="theme__inner"><span class="theme__box"></span></span>
-								</label>
-							</div>
+							<a class="footer__logo" href="index.html"><img class="some-icon" src="./img/Figyer Thumbsnail/logo.svg" alt="Figyer" /></a>
+							<div class="footer__info">Let’s make a great portrait together</div>
 						</div>
 						<div class="footer__col">
 							<div class="footer__group">
 								<div class="footer__head">
-									Crypter.
+									Figurr.
 									<svg class="icon icon-arrow-bottom">
 										<use xlink:href="#icon-arrow-bottom"></use>
 									</svg>
 								</div>
 								<div class="footer__body">
-									<div class="footer__menu"><a class="footer__link" href="search01.html">Discover</a><a class="footer__link" href="connect-wallet.html">Connect wallet</a></div>
+									<div class="footer__menu"><a class="footer__link" href="search01.html">Discover</a><a class="footer__link" href="connect-wallet.html">About us</a></div>
 								</div>
 							</div>
 							<div class="footer__group">
@@ -303,13 +372,13 @@
 									</svg>
 								</div>
 								<div class="footer__body">
-									<div class="footer__menu"><a class="footer__link" href="faq.html">FAQ</a><a class="footer__link" href="upload-variants.html">Create item</a></div>
+									<div class="footer__menu"><a class="footer__link" href="faq.html">FAQ</a><a class="footer__link" href="upload-variants.html">Language</a></div>
 								</div>
 							</div>
 						</div>
 						<div class="footer__col">
 							<div class="footer__category">Join Newsletter</div>
-							<div class="footer__text">Subscribe our newsletter to get more free design course and resource</div>
+							<div class="footer__text">Subscribe our newsletter to get more information and update</div>
 							<form class="subscription">
 								<input class="subscription__input" type="email" name="email" placeholder="Enter your email" required="required" />
 								<button class="subscription__btn">
@@ -321,7 +390,7 @@
 						</div>
 					</div>
 					<div class="footer__foot">
-						<div class="footer__copyright">Copyright © 2021 UI8 LLC. All rights reserved</div>
+						<div class="footer__copyright">Copyright © 2022 figurr LLC. All rights reserved</div>
 						<div class="footer__note">We use cookies for better service. <a href="/#">Accept</a></div>
 					</div>
 				</div>
