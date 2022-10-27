@@ -375,6 +375,32 @@ $(document).ready(function () {
 		});
 	});
 })(); // faq
+(function () {
+	var tabs = $(".js-nav-edit");
+	tabs.each(function () {
+		var thisTabs = $(this),
+			nav = thisTabs.find(".js-edit-link"),
+			item = thisTabs.find(".js-edit-item");
+		nav.on("click", function () {
+			var thisNav = $(this),
+				indexNav = thisNav.index();
+			nav.removeClass("active");
+			thisNav.addClass("active");
+			item.hide();
+			item.eq(indexNav).fadeIn();
+			return false;
+		});
+	});
+	$(document).ready(function () {
+		var option = $(".js-tabs-select .option");
+		option.on("click", function () {
+			var thisOption = $(this),
+				indexOption = thisOption.index();
+			$(".js-edit-item").hide();
+			$(".js-edit-item").eq(indexOption).fadeIn();
+		});
+	});
+})(); // faq
 
 (function () {
 	var item = $(".faq__item"),

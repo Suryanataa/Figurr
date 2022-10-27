@@ -139,13 +139,13 @@
 										</svg>
 									</div>
 									<div class="header__text">My profile</div></a
-								><a class="header__link" href="item.html">
+								><a class="header__link" href="profile-edit.html">
 									<div class="header__icon">
-										<svg class="icon icon-image">
-											<use xlink:href="#icon-image"></use>
+										<svg class="icon icon-accsetting">
+											<use xlink:href="#icon-accsetting"></use>
 										</svg>
 									</div>
-									<div class="header__text">My items</div></a
+									<div class="header__text">Account Setting</div></a
 								><a class="header__link" href="#">
 									<div class="header__icon">
 										<svg class="icon icon-bulb">
@@ -170,174 +170,705 @@
 			</header>
 
 			<div class="outer__inner">
-				<div class="section-pt80 details" style="display: flex">
-					<div class="edit__inner">tes</div>
-					<div class="details__center center">
-						<div class="details__top">
-							<h1 class="details__title h2">Personal info</h1>
-						</div>
-						<div class="details__row" style="flex-wrap: wrap">
-							<div class="details__col">
-								<div class="details__user">
-									<div class="details__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
-									<div class="details__wrap">
-										<div class="details__stage">Profile photo</div>
-										<div class="details__text">We recommend an image of at least 400x400. Gifs work too <span role="img" aria-label="hooray">🙌</span></div>
-										<div class="details__file">
-											<input class="details__input" type="file" />
-											<button class="button-stroke button-small details__button">Upload</button>
-										</div>
-									</div>
-								</div>
+				<div class="section-pt80 details js-nav-edit" style="display: flex">
+					<div class="edit__inner header__menu">
+						<a class="edit__link navedit-title js-edit-link active" href="#">
+							<div class="header__icon">
+								<svg class="icon icon-user icon-edit">
+									<use xlink:href="#icon-user"></use>
+								</svg>
 							</div>
-							<div class="details__col">
-								<div class="details__list">
-									<div class="details__item">
-										<div class="details__fieldset">
-											<div class="field">
-												<div class="field__label">first name</div>
-												<div class="field__wrap">
-													<input class="field__input" type="text" name="name" placeholder="Enter your first name" required />
-												</div>
-											</div>
-											<div class="field">
-												<div class="field__label">last name</div>
-												<div class="field__wrap">
-													<input class="field__input" type="text" name="url" placeholder="Enter your last name" required />
-												</div>
+							Personal info
+						</a>
+						<a class="edit__link navedit-title js-edit-link" href="#">
+							<div class="header__icon">
+								<svg class="icon icon-lock icon-edit">
+									<use xlink:href="#icon-lock"></use>
+								</svg>
+							</div>
+							Login and security
+						</a>
+						<a class="edit__link navedit-title js-edit-link" href="#">
+							<div class="header__icon">
+								<svg class="icon icon-notification icon-edit">
+									<use xlink:href="#icon-notification"></use>
+								</svg>
+							</div>
+							Notification
+						</a>
+						<a class="edit__link navedit-title js-edit-link" href="#">
+							<div class="header__icon">
+								<svg class="icon icon-eraser icon-edit">
+									<use xlink:href="#icon-eraser"></use>
+								</svg>
+							</div>
+							Delete Account
+						</a>
+					</div>
+					<div class="details__center center">
+						<div class="js-edit-item">
+							<div class="details__top" style="display: flex; justify-content: space-between">
+								<h1 class="details__title h2">Personal info</h1>
+								<a href="profile-user.html">
+									<button class="button-stroke button-small">View Profile</button>
+								</a>
+							</div>
+							<div class="details__category">Account info</div>
+							<div class="details__row" style="flex-wrap: wrap">
+								<div class="details__col">
+									<div class="details__user">
+										<div class="details__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
+										<div class="details__wrap">
+											<div class="details__stage">Profile photo</div>
+											<div class="details__text">We recommend an image of at least 400x400. Gifs work too <span role="img" aria-label="hooray">🙌</span></div>
+											<div class="details__file">
+												<input class="details__input" type="file" />
+												<button class="button-stroke button-small details__button">Upload</button>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!-- <div class="details__item">
-										<div class="details__category">Social</div>
-										<div class="details__fieldset">
-											<div class="field">
-												<div class="field__label">portfolio or website</div>
-												<div class="field__wrap">
-													<input class="field__input" type="text" name="portfolio" placeholder="Enter URL" required />
-												</div>
-											</div>
-											<div class="details__box">
+								<div class="details__col">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
 												<div class="field">
-													<div class="field__label">twitter</div>
+													<div class="field__label">first name</div>
 													<div class="field__wrap">
-														<input class="field__input" type="text" name="twitter" placeholder="@twitter username" required />
+														<input class="field__input" type="text" name="name" placeholder="Enter your first name" required />
 													</div>
 												</div>
-												<button class="button-stroke button-small details__button">Verify account</button>
-											</div>
-										</div>
-										<button class="button-stroke button-small details__button">
-											<svg class="icon icon-plus-circle">
-												<use xlink:href="#icon-plus-circle"></use></svg
-											><span>Add more social account</span>
-										</button>
-									</div> -->
-								<!-- <div class="details__note">To update your settings you should sign message through your wallet. Click 'Update profile' then sign the message</div>
-								<div class="details__btns">
-									<button class="button details__button">Update Profile</button
-									><a class="details__clear" href="#">
-										<svg class="icon icon-circle-close">
-											<use xlink:href="#icon-circle-close"></use></svg
-										>Clear all</a
-									>
-								</div> -->
-							</div>
-						</div>
-						<div class="datails__row" style="width: 100%">
-							<div class="field" style="margin-bottom: 30px">
-								<div class="field__label">email</div>
-								<div class="field__wrap">
-									<input class="field__input" type="email" name="url" placeholder="Enter your Email" required />
-								</div>
-							</div>
-							<div class="field field_textarea">
-								<div class="field__label">Bio</div>
-								<div class="field__wrap">
-									<textarea style="height: 156px" class="field__textarea" name="bio" placeholder="About yourselt in a few words" required></textarea>
-								</div>
-							</div>
-						</div>
-						<div class="details__row" style="margin: 30px 0 0 0">
-							<div class="details_col" style="width: 100%; margin-right: 10px">
-								<div class="details__list">
-									<div class="details__item">
-										<div class="details__fieldset">
-											<div class="field__label">lives in</div>
-											<div class="field__wrap">
-												<select class="select">
-													<option>Location</option>
-													<option>Manual</option>
-													<option>Digital</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="details_col" style="width: 100%; margin-left: 10px">
-								<div class="details__list">
-									<div class="details__item">
-										<div class="details__fieldset">
-											<div class="field" style="margin-bottom: 30px">
-												<div class="field__label">city</div>
-												<div class="field__wrap">
-													<input class="field__input" type="text" name="url" required />
+												<div class="field">
+													<div class="field__label">last name</div>
+													<div class="field__wrap">
+														<input class="field__input" type="text" name="url" placeholder="Enter your last name" required />
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="details__row" style="margin: 30px 0 0 0; align-items: center">
-							<div class="details_col" style="width: 30%; margin-right: 10px">
-								<div class="details__list">
-									<div class="details__item">
-										<div class="details__fieldset">
-											<div class="field__label">code</div>
-											<div class="field__wrap">
-												<select class="select">
-													<option>+1</option>
-													<option>Manual</option>
-													<option>Digital</option>
-												</select>
+							<div class="datails__row" style="width: 100%">
+								<div class="field" style="margin-bottom: 30px">
+									<div class="field__label">email</div>
+									<div class="field__wrap">
+										<input class="field__input" type="email" name="url" placeholder="Enter your Email" required />
+									</div>
+								</div>
+								<div class="field field_textarea">
+									<div class="field__label">Bio</div>
+									<div class="field__wrap">
+										<textarea style="height: 156px" class="field__textarea" name="bio" placeholder="About yourselt in a few words" required></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="details__row" style="margin: 30px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field__label">lives in</div>
+												<div class="field__wrap">
+													<select class="select">
+														<option>Location</option>
+														<option>Manual</option>
+														<option>Digital</option>
+													</select>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="details_col" style="width: 100%; margin-left: 10px">
-								<div class="details__list">
-									<div class="details__item">
-										<div class="details__fieldset">
-											<div class="field" style="margin-bottom: 30px">
-												<div class="field__label">phone</div>
-												<div class="field__wrap">
-													<input class="field__input" type="number" name="url" required />
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field" style="margin-bottom: 30px">
+													<div class="field__label">city</div>
+													<div class="field__wrap">
+														<input class="field__input" type="text" name="url" required />
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="details_col" style="width: 95%; margin-left: 20px; padding-bottom: 18px">
-								<div class="details__item">
-									<div class="details__fieldset" style="display: flex; justify-content: space-between">
-										<div class="label_switch">Show or dont show number</div>
-										<label class="switch" style="margin-left: 15px">
-											<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
-										</label>
+							<div class="details__row" style="margin: 30px 0 0 0; align-items: center">
+								<div class="details_col" style="width: 30%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field__label">code</div>
+												<div class="field__wrap">
+													<select class="select">
+														<option>+1</option>
+														<option>Manual</option>
+														<option>Digital</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field" style="margin-bottom: 30px">
+													<div class="field__label">phone</div>
+													<div class="field__wrap">
+														<input class="field__input" type="number" name="url" required />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 95%; margin-left: 20px; padding-bottom: 18px">
+									<div class="details__item">
+										<div class="details__fieldset" style="display: flex; justify-content: space-between">
+											<div class="label_switch">Show or dont show number</div>
+											<label class="switch" style="margin-left: 15px">
+												<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="datails__row" style="width: 100%">
+								<div class="field" style="margin-bottom: 30px">
+									<div class="field__label">website</div>
+									<div class="field__wrap">
+										<input class="field__input" type="url" name="url" placeholder="Your site URL" required />
+									</div>
+								</div>
+							</div>
+							<div class="details__category">Social</div>
+							<div class="details__row" style="margin: 30px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">instagram</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@instagram username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">facebook</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@facebook username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details__row" style="margin: 10px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">dribbble</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@dribbble username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">behance</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@behance username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details__btns">
+								<a style="margin-right: 35px" href="#">
+									<button class="button details__button">Update Profile</button>
+								</a>
+								<a class="details__clearr" href="#">
+									<img class="tombol-clear" src="./img/Figyer Thumbsnail/silang.svg" alt="tombol silang" style="margin-right: 15px" />
+									Clear all
+								</a>
+							</div>
 						</div>
-						<div class="datails__row" style="width: 100%">
-							<div class="field" style="margin-bottom: 30px">
-								<div class="field__label">website</div>
-								<div class="field__wrap">
-									<input class="field__input" type="url" name="url" placeholder="Your site URL" required />
+
+						<div class="js-edit-item">
+							<div class="details__top">
+								<h1 class="details__title h2">Login and security</h1>
+							</div>
+							<div class="details__category">Account info</div>
+							<div class="details__row" style="flex-wrap: wrap">
+								<div class="details__col">
+									<div class="details__user">
+										<div class="details__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
+										<div class="details__wrap">
+											<div class="details__stage">Profile photo</div>
+											<div class="details__text">We recommend an image of at least 400x400. Gifs work too <span role="img" aria-label="hooray">🙌</span></div>
+											<div class="details__file">
+												<input class="details__input" type="file" />
+												<button class="button-stroke button-small details__button">Upload</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details__col">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field">
+													<div class="field__label">first name</div>
+													<div class="field__wrap">
+														<input class="field__input" type="text" name="name" placeholder="Enter your first name" required />
+													</div>
+												</div>
+												<div class="field">
+													<div class="field__label">last name</div>
+													<div class="field__wrap">
+														<input class="field__input" type="text" name="url" placeholder="Enter your last name" required />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="datails__row" style="width: 100%">
+								<div class="field" style="margin-bottom: 30px">
+									<div class="field__label">email</div>
+									<div class="field__wrap">
+										<input class="field__input" type="email" name="url" placeholder="Enter your Email" required />
+									</div>
+								</div>
+								<div class="field field_textarea">
+									<div class="field__label">Bio</div>
+									<div class="field__wrap">
+										<textarea style="height: 156px" class="field__textarea" name="bio" placeholder="About yourselt in a few words" required></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="details__row" style="margin: 30px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field__label">lives in</div>
+												<div class="field__wrap">
+													<select class="select">
+														<option>Location</option>
+														<option>Manual</option>
+														<option>Digital</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field" style="margin-bottom: 30px">
+													<div class="field__label">city</div>
+													<div class="field__wrap">
+														<input class="field__input" type="text" name="url" required />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details__row" style="margin: 30px 0 0 0; align-items: center">
+								<div class="details_col" style="width: 30%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field__label">code</div>
+												<div class="field__wrap">
+													<select class="select">
+														<option>+1</option>
+														<option>Manual</option>
+														<option>Digital</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field" style="margin-bottom: 30px">
+													<div class="field__label">phone</div>
+													<div class="field__wrap">
+														<input class="field__input" type="number" name="url" required />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 95%; margin-left: 20px; padding-bottom: 18px">
+									<div class="details__item">
+										<div class="details__fieldset" style="display: flex; justify-content: space-between">
+											<div class="label_switch">Show or dont show number</div>
+											<label class="switch" style="margin-left: 15px">
+												<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="datails__row" style="width: 100%">
+								<div class="field" style="margin-bottom: 30px">
+									<div class="field__label">website</div>
+									<div class="field__wrap">
+										<input class="field__input" type="url" name="url" placeholder="Your site URL" required />
+									</div>
+								</div>
+							</div>
+							<div class="details__category">Social</div>
+							<div class="details__row" style="margin: 30px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">instagram</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@instagram username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">facebook</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@facebook username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details__row" style="margin: 10px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">dribbble</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@dribbble username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">behance</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@behance username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details__btns">
+								<button class="button details__button">Update Profile</button>
+								<a class="details__clearr" href="#">
+									<img class="tombol-clear" src="./img/Figyer Thumbsnail/silang.svg" alt="tombol silang" style="margin-right: 15px" />
+									Clear all
+								</a>
+							</div>
+						</div>
+						<div class="js-edit-item">
+							<div class="details__top">
+								<h1 class="details__title h2">Notification Setting</h1>
+							</div>
+							<div class="details__category">Account info</div>
+							<div class="details__row" style="flex-wrap: wrap">
+								<div class="details__col">
+									<div class="details__user">
+										<div class="details__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
+										<div class="details__wrap">
+											<div class="details__stage">Profile photo</div>
+											<div class="details__text">We recommend an image of at least 400x400. Gifs work too <span role="img" aria-label="hooray">🙌</span></div>
+											<div class="details__file">
+												<input class="details__input" type="file" />
+												<button class="button-stroke button-small details__button">Upload</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details__col">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field">
+													<div class="field__label">first name</div>
+													<div class="field__wrap">
+														<input class="field__input" type="text" name="name" placeholder="Enter your first name" required />
+													</div>
+												</div>
+												<div class="field">
+													<div class="field__label">last name</div>
+													<div class="field__wrap">
+														<input class="field__input" type="text" name="url" placeholder="Enter your last name" required />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="datails__row" style="width: 100%">
+								<div class="field" style="margin-bottom: 30px">
+									<div class="field__label">email</div>
+									<div class="field__wrap">
+										<input class="field__input" type="email" name="url" placeholder="Enter your Email" required />
+									</div>
+								</div>
+								<div class="field field_textarea">
+									<div class="field__label">Bio</div>
+									<div class="field__wrap">
+										<textarea style="height: 156px" class="field__textarea" name="bio" placeholder="About yourselt in a few words" required></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="details__row" style="margin: 30px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field__label">lives in</div>
+												<div class="field__wrap">
+													<select class="select">
+														<option>Location</option>
+														<option>Manual</option>
+														<option>Digital</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field" style="margin-bottom: 30px">
+													<div class="field__label">city</div>
+													<div class="field__wrap">
+														<input class="field__input" type="text" name="url" required />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details__row" style="margin: 30px 0 0 0; align-items: center">
+								<div class="details_col" style="width: 30%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field__label">code</div>
+												<div class="field__wrap">
+													<select class="select">
+														<option>+1</option>
+														<option>Manual</option>
+														<option>Digital</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="field" style="margin-bottom: 30px">
+													<div class="field__label">phone</div>
+													<div class="field__wrap">
+														<input class="field__input" type="number" name="url" required />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 95%; margin-left: 20px; padding-bottom: 18px">
+									<div class="details__item">
+										<div class="details__fieldset" style="display: flex; justify-content: space-between">
+											<div class="label_switch">Show or dont show number</div>
+											<label class="switch" style="margin-left: 15px">
+												<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="datails__row" style="width: 100%">
+								<div class="field" style="margin-bottom: 30px">
+									<div class="field__label">website</div>
+									<div class="field__wrap">
+										<input class="field__input" type="url" name="url" placeholder="Your site URL" required />
+									</div>
+								</div>
+							</div>
+							<div class="details__category">Social</div>
+							<div class="details__row" style="margin: 30px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">instagram</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@instagram username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">facebook</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@facebook username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details__row" style="margin: 10px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">dribbble</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@dribbble username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="details_col" style="width: 100%; margin-left: 10px">
+									<div class="details__list">
+										<div class="details__item">
+											<div class="details__fieldset">
+												<div class="details__box">
+													<div class="field">
+														<div class="field__label">behance</div>
+														<div class="field__wrap">
+															<input class="field__input" type="text" name="twitter" placeholder="@behance username" required />
+														</div>
+													</div>
+													<button class="button-stroke button-small details__button">Verify account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="details__btns">
+								<button class="button details__button">Update Profile</button>
+								<a class="details__clearr" href="#">
+									<img class="tombol-clear" src="./img/Figyer Thumbsnail/silang.svg" alt="tombol silang" style="margin-right: 15px" />
+									Clear all
+								</a>
+							</div>
+						</div>
+						<div class="js-edit-item delete">
+							<div class="details__top h2">Delete Account</div>
+							<div class="details__row delete" style="flex-wrap: wrap">
+								<div class="details__col">
+									<div class="delete-ask">Would you like to delete your Figerr account:?</div>
+									<a class="delete-btn" href="#">I want to delete my account</a>
 								</div>
 							</div>
 						</div>
@@ -410,6 +941,60 @@
 		<!-- svg sprite-->
 		<div style="display: none">
 			<svg width="0" height="0">
+				<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-accsetting">
+					<path
+						d="M15.832 7.50081C16.2923 7.50081 16.6654 7.87391 16.6654 8.33415L16.6654 17.5008C16.6654 17.9611 16.2923 18.3341 15.832 18.3341C15.3718 18.3341 14.9987 17.9611 14.9987 17.5008L14.9987 8.33415C14.9987 7.87391 15.3718 7.50081 15.832 7.50081Z"
+					/>
+					<path
+						d="M15.832 1.66748C16.2923 1.66748 16.6654 2.04058 16.6654 2.50081V5.00081C16.6654 5.46105 16.2923 5.83415 15.832 5.83415C15.3718 5.83415 14.9987 5.46105 14.9987 5.00081V2.50081C14.9987 2.04058 15.3718 1.66748 15.832 1.66748Z"
+					/>
+					<path
+						d="M10.832 2.50081C10.832 2.04058 10.4589 1.66748 9.9987 1.66748C9.53846 1.66748 9.16537 2.04058 9.16537 2.50081L9.16537 11.6675C9.16537 12.1277 9.53846 12.5008 9.9987 12.5008C10.4589 12.5008 10.832 12.1277 10.832 11.6675L10.832 2.50081Z"
+					/>
+					<path
+						d="M10.832 15.0008C10.832 14.5406 10.4589 14.1675 9.9987 14.1675C9.53846 14.1675 9.16537 14.5406 9.16537 15.0008L9.16537 17.5008C9.16537 17.9611 9.53846 18.3341 9.9987 18.3341C10.4589 18.3341 10.832 17.9611 10.832 17.5008L10.832 15.0008Z"
+					/>
+					<path
+						d="M4.9987 2.50081C4.9987 2.04058 4.6256 1.66748 4.16537 1.66748C3.70513 1.66748 3.33203 2.04058 3.33203 2.50081L3.33203 8.33415C3.33203 8.79438 3.70513 9.16748 4.16537 9.16748C4.6256 9.16748 4.9987 8.79438 4.9987 8.33415L4.9987 2.50081Z"
+					/>
+					<path
+						d="M4.9987 11.6675C4.9987 11.2072 4.6256 10.8341 4.16536 10.8341C3.70513 10.8341 3.33203 11.2072 3.33203 11.6675L3.33203 17.5008C3.33203 17.9611 3.70513 18.3341 4.16536 18.3341C4.6256 18.3341 4.9987 17.9611 4.9987 17.5008L4.9987 11.6675Z"
+					/>
+					<path
+						d="M15.8346 9.16748C14.4539 9.16748 13.3346 8.04819 13.3346 6.66748C13.3346 5.28677 14.4539 4.16748 15.8346 4.16748C17.2153 4.16748 18.3346 5.28677 18.3346 6.66748C18.3346 8.04819 17.2153 9.16748 15.8346 9.16748ZM15.8346 7.50081C15.3744 7.50081 15.0013 7.12772 15.0013 6.66748C15.0013 6.20724 15.3744 5.83415 15.8346 5.83415C16.2949 5.83415 16.668 6.20724 16.668 6.66748C16.668 7.12772 16.2949 7.50081 15.8346 7.50081Z"
+					/>
+					<path
+						d="M7.5013 13.3341C7.5013 14.7149 8.62059 15.8341 10.0013 15.8341C11.382 15.8341 12.5013 14.7149 12.5013 13.3341C12.5013 11.9534 11.382 10.8341 10.0013 10.8341C8.62059 10.8341 7.5013 11.9534 7.5013 13.3341ZM9.16797 13.3341C9.16797 13.7944 9.54107 14.1675 10.0013 14.1675C10.4615 14.1675 10.8346 13.7944 10.8346 13.3341C10.8346 12.8739 10.4615 12.5008 10.0013 12.5008C9.54107 12.5008 9.16797 12.8739 9.16797 13.3341Z"
+					/>
+					<path
+						d="M1.66797 10.0008C1.66797 11.3815 2.78726 12.5008 4.16797 12.5008C5.54868 12.5008 6.66797 11.3815 6.66797 10.0008C6.66797 8.6201 5.54868 7.50081 4.16797 7.50081C2.78726 7.50081 1.66797 8.6201 1.66797 10.0008ZM3.33464 10.0008C3.33464 10.4611 3.70773 10.8341 4.16797 10.8341C4.62821 10.8341 5.0013 10.4611 5.0013 10.0008C5.0013 9.54058 4.62821 9.16748 4.16797 9.16748C3.70773 9.16748 3.33464 9.54058 3.33464 10.0008Z"
+					/>
+				</symbol>
+				<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-eraser">
+					<path d="M4 13.3332C4 12.965 4.29848 12.6665 4.66667 12.6665H14C14.3682 12.6665 14.6667 12.965 14.6667 13.3332C14.6667 13.7014 14.3682 13.9998 14 13.9998H4.66667C4.29848 13.9998 4 13.7014 4 13.3332Z" fill="#777E91" />
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M13.9188 4.58581L11.4139 2.0809C10.6329 1.29985 9.36653 1.29986 8.58548 2.0809L1.41391 9.25248C0.632864 10.0335 0.632862 11.2999 1.41391 12.0809L2.55198 13.219C3.05208 13.7191 3.73036 14 4.4376 14H6.22846C6.93571 14 7.61398 13.7191 8.11408 13.219L13.9188 7.41424C14.6999 6.63319 14.6999 5.36686 13.9188 4.58581ZM10.4711 3.02371L12.976 5.52862C13.2364 5.78897 13.2364 6.21108 12.976 6.47143L10.0569 9.39055L6.60917 5.94283L9.52829 3.02371C9.78864 2.76336 10.2108 2.76336 10.4711 3.02371ZM5.60917 6.94283L2.35672 10.1953C2.09637 10.4556 2.09637 10.8777 2.35672 11.1381L3.49479 12.2762C3.74484 12.5262 4.08398 12.6667 4.4376 12.6667H6.22846C6.58209 12.6667 6.92122 12.5262 7.17127 12.2762L9.05689 10.3905L5.60917 6.94283Z"
+					/>
+				</symbol>
+				<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-lock">
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M8 7.33333C6.81828 7.33333 5.76562 7.37637 4.90558 7.43104C4.08981 7.4829 3.46253 8.10532 3.40398 8.91533C3.36233 9.49155 3.33333 10.0987 3.33333 10.6667C3.33333 11.2346 3.36233 11.8418 3.40398 12.418C3.46253 13.228 4.08981 13.8504 4.90559 13.9023C5.76562 13.957 6.81828 14 8 14C9.18172 14 10.2344 13.957 11.0944 13.9023C11.9102 13.8504 12.5375 13.228 12.596 12.418C12.6377 11.8418 12.6667 11.2346 12.6667 10.6667C12.6667 10.0987 12.6377 9.49155 12.596 8.91533C12.5375 8.10532 11.9102 7.4829 11.0944 7.43104C10.2344 7.37637 9.18172 7.33333 8 7.33333ZM4.821 6.10039C3.34251 6.19437 2.18092 7.34158 2.07412 8.81921C2.03101 9.41559 2 10.0566 2 10.6667C2 11.2767 2.03101 11.9177 2.07412 12.5141C2.18092 13.9918 3.34251 15.139 4.821 15.2329C5.70519 15.2891 6.78631 15.3333 8 15.3333C9.2137 15.3333 10.2948 15.2891 11.179 15.2329C12.6575 15.139 13.8191 13.9918 13.9259 12.5141C13.969 11.9177 14 11.2767 14 10.6667C14 10.0566 13.969 9.41559 13.9259 8.81921C13.8191 7.34158 12.6575 6.19437 11.179 6.10039C10.2948 6.04419 9.21369 6 8 6C6.78631 6 5.70519 6.04419 4.821 6.10039Z"
+					/>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M8.66797 11.1548C9.0665 10.9243 9.33464 10.4934 9.33464 9.99984C9.33464 9.26346 8.73768 8.6665 8.0013 8.6665C7.26492 8.6665 6.66797 9.26346 6.66797 9.99984C6.66797 10.4934 6.9361 10.9243 7.33464 11.1548V11.9998C7.33464 12.368 7.63311 12.6665 8.0013 12.6665C8.36949 12.6665 8.66797 12.368 8.66797 11.9998V11.1548Z"
+					/>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M4.66797 3.99984C4.66797 2.15889 6.16035 0.666504 8.0013 0.666504C9.84225 0.666504 11.3346 2.15889 11.3346 3.99984V6.6665C11.3346 7.03469 11.0362 7.33317 10.668 7.33317C10.2998 7.33317 10.0013 7.03469 10.0013 6.6665V3.99984C10.0013 2.89527 9.10587 1.99984 8.0013 1.99984C6.89673 1.99984 6.0013 2.89527 6.0013 3.99984V6.6665C6.0013 7.03469 5.70283 7.33317 5.33464 7.33317C4.96645 7.33317 4.66797 7.03469 4.66797 6.6665V3.99984Z"
+					/>
+				</symbol>
 				<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-search">
 					<path
 						d="M6.667 1.334c2.945 0 5.333 2.388 5.333 5.333a5.31 5.31 0 0 1-1.12 3.27l3.592 3.592c.26.26.26.682 0 .943s-.682.26-.943 0l-3.591-3.592a5.31 5.31 0 0 1-3.27 1.12c-2.946 0-5.333-2.388-5.333-5.333s2.388-5.333 5.333-5.333zm0 1.333a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"
