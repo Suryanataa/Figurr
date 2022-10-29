@@ -170,7 +170,15 @@
 			</header>
 
 			<div class="outer__inner">
-				<div class="section-pt80 details js-nav-edit" style="display: flex">
+				<div class="section-pt80 details js-nav-edit">
+					<div class="mobile-show" style="margin-bottom: 32px">
+						<select class="edit select js-tabs-select">
+							<option>Personal info</option>
+							<option>Login and security</option>
+							<option>Notification</option>
+							<option>Delete Account</option>
+						</select>
+					</div>
 					<div class="edit__inner header__menu">
 						<a class="edit__link navedit-title js-edit-link active" href="#">
 							<div class="header__icon">
@@ -206,16 +214,17 @@
 						</a>
 					</div>
 					<div class="details__center center">
+						<!-- tab personal info -->
 						<div class="js-edit-item">
-							<div class="details__top" style="display: flex; justify-content: space-between">
-								<h1 class="details__title h2">Personal info</h1>
-								<a href="profile-user.html">
+							<div class="datails__top" style="display: flex; justify-content: space-between; border: none">
+								<h1 class="edit__top h2" style="width: 50%">Personal info</h1>
+								<a href="profile-user.html" style="margin-top: 10px">
 									<button class="button-stroke button-small">View Profile</button>
 								</a>
 							</div>
-							<div class="details__category">Account info</div>
-							<div class="details__row" style="flex-wrap: wrap">
-								<div class="details__col">
+							<div class="details__category" style="margin-bottom: 24px">Account info</div>
+							<div class="details__row1" style="flex-wrap: wrap">
+								<div class="details__col" style="border: none">
 									<div class="details__user">
 										<div class="details__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
 										<div class="details__wrap">
@@ -230,7 +239,7 @@
 								</div>
 								<div class="details__col">
 									<div class="details__list">
-										<div class="details__item">
+										<div class="details__item1">
 											<div class="details__fieldset">
 												<div class="field">
 													<div class="field__label">first name</div>
@@ -263,9 +272,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="details__row" style="margin: 30px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
-									<div class="details__list">
+							<div class="details__row1" style="margin: 30px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 20px">
+									<div class="details__list1">
 										<div class="details__item">
 											<div class="details__fieldset">
 												<div class="field__label">lives in</div>
@@ -280,8 +289,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
-									<div class="details__list">
+								<div class="details_col" style="width: 100%">
+									<div class="details__list1">
 										<div class="details__item">
 											<div class="details__fieldset">
 												<div class="field" style="margin-bottom: 30px">
@@ -295,9 +304,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="details__row" style="margin: 30px 0 0 0; align-items: center">
-								<div class="details_col" style="width: 30%; margin-right: 10px">
-									<div class="details__list">
+							<div class="details__rowphn" style="margin: 30px 0 0 0; align-items: center">
+								<div class="details_colphn" style="margin-right: 10px">
+									<div class="details__list1">
 										<div class="details__item">
 											<div class="details__fieldset">
 												<div class="field__label">code</div>
@@ -312,8 +321,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
-									<div class="details__list">
+								<div class="details_colphn" style="margin-left: 10px">
+									<div class="details__list1">
 										<div class="details__item">
 											<div class="details__fieldset">
 												<div class="field" style="margin-bottom: 30px">
@@ -326,7 +335,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="details_col" style="width: 95%; margin-left: 20px; padding-bottom: 18px">
+								<div class="details_colphn" style="padding-bottom: 18px">
 									<div class="details__item">
 										<div class="details__fieldset" style="display: flex; justify-content: space-between">
 											<div class="label_switch">Show or dont show number</div>
@@ -346,8 +355,8 @@
 								</div>
 							</div>
 							<div class="details__category">Social</div>
-							<div class="details__row" style="margin: 30px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
+							<div class="details__row1" style="margin: 30px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 20px">
 									<div class="details__list">
 										<div class="details__item">
 											<div class="details__fieldset">
@@ -355,7 +364,7 @@
 													<div class="field">
 														<div class="field__label">instagram</div>
 														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@instagram username" required />
+															<input class="field__input" type="text" name="twitter" placeholder="@instagram " required />
 														</div>
 													</div>
 													<button class="button-stroke button-small details__button">Verify account</button>
@@ -364,7 +373,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
+								<div class="details_col" style="width: 100%">
 									<div class="details__list">
 										<div class="details__item">
 											<div class="details__fieldset">
@@ -372,7 +381,7 @@
 													<div class="field">
 														<div class="field__label">facebook</div>
 														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@facebook username" required />
+															<input class="field__input" type="text" name="twitter" placeholder="@facebook " required />
 														</div>
 													</div>
 													<button class="button-stroke button-small details__button">Verify account</button>
@@ -382,8 +391,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="details__row" style="margin: 10px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
+							<div class="details__row1" style="margin: 10px 0 0 0">
+								<div class="details_col" style="width: 100%; margin-right: 20px">
 									<div class="details__list">
 										<div class="details__item">
 											<div class="details__fieldset">
@@ -391,7 +400,7 @@
 													<div class="field">
 														<div class="field__label">dribbble</div>
 														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@dribbble username" required />
+															<input class="field__input" type="text" name="twitter" placeholder="@dribbble " required />
 														</div>
 													</div>
 													<button class="button-stroke button-small details__button">Verify account</button>
@@ -400,7 +409,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
+								<div class="details_col" style="width: 100%">
 									<div class="details__list">
 										<div class="details__item">
 											<div class="details__fieldset">
@@ -408,7 +417,7 @@
 													<div class="field">
 														<div class="field__label">behance</div>
 														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@behance username" required />
+															<input class="field__input" type="text" name="twitter" placeholder="@behance " required />
 														</div>
 													</div>
 													<button class="button-stroke button-small details__button">Verify account</button>
@@ -418,7 +427,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="details__btns">
+							<div class="details__btns" style="display: flex">
 								<a style="margin-right: 35px" href="#">
 									<button class="button details__button">Update Profile</button>
 								</a>
@@ -428,443 +437,209 @@
 								</a>
 							</div>
 						</div>
+						<!-- end of personal info -->
 
+						<!-- login and security -->
 						<div class="js-edit-item">
-							<div class="details__top">
+							<div class="edit__top">
 								<h1 class="details__title h2">Login and security</h1>
 							</div>
-							<div class="details__category">Account info</div>
-							<div class="details__row" style="flex-wrap: wrap">
+							<div class="details__row">
 								<div class="details__col">
-									<div class="details__user">
-										<div class="details__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
-										<div class="details__wrap">
-											<div class="details__stage">Profile photo</div>
-											<div class="details__text">We recommend an image of at least 400x400. Gifs work too <span role="img" aria-label="hooray">🙌</span></div>
-											<div class="details__file">
-												<input class="details__input" type="file" />
-												<button class="button-stroke button-small details__button">Upload</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="details__col">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="field">
-													<div class="field__label">first name</div>
-													<div class="field__wrap">
-														<input class="field__input" type="text" name="name" placeholder="Enter your first name" required />
-													</div>
-												</div>
-												<div class="field">
-													<div class="field__label">last name</div>
-													<div class="field__wrap">
-														<input class="field__input" type="text" name="url" placeholder="Enter your last name" required />
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+									<div class="details__heading">Login</div>
+									<div class="login__category">Password</div>
 								</div>
 							</div>
-							<div class="datails__row" style="width: 100%">
-								<div class="field" style="margin-bottom: 30px">
-									<div class="field__label">email</div>
-									<div class="field__wrap">
-										<input class="field__input" type="email" name="url" placeholder="Enter your Email" required />
-									</div>
-								</div>
-								<div class="field field_textarea">
-									<div class="field__label">Bio</div>
-									<div class="field__wrap">
-										<textarea style="height: 156px" class="field__textarea" name="bio" placeholder="About yourselt in a few words" required></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="details__row" style="margin: 30px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="field__label">lives in</div>
-												<div class="field__wrap">
-													<select class="select">
-														<option>Location</option>
-														<option>Manual</option>
-														<option>Digital</option>
-													</select>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
+							<div class="details__row" style="margin: 16px 0 0 0; align-items: center">
+								<div class="details_col" style="width: 100%">
 									<div class="details__list">
 										<div class="details__item">
 											<div class="details__fieldset">
 												<div class="field" style="margin-bottom: 30px">
-													<div class="field__label">city</div>
+													<div class="field__label">old password</div>
 													<div class="field__wrap">
-														<input class="field__input" type="text" name="url" required />
+														<input placeholder="*****" class="field__input" type="password" name="url" required />
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="details__row" style="margin: 30px 0 0 0; align-items: center">
-								<div class="details_col" style="width: 30%; margin-right: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="field__label">code</div>
-												<div class="field__wrap">
-													<select class="select">
-														<option>+1</option>
-														<option>Manual</option>
-														<option>Digital</option>
-													</select>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
+								<div class="details_col lgn" style="width: 100%">
 									<div class="details__list">
 										<div class="details__item">
 											<div class="details__fieldset">
 												<div class="field" style="margin-bottom: 30px">
-													<div class="field__label">phone</div>
+													<div class="field__label">new passwrod</div>
 													<div class="field__wrap">
-														<input class="field__input" type="number" name="url" required />
+														<input placeholder="*****" class="field__input" type="password" name="url" required />
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="details_col" style="width: 95%; margin-left: 20px; padding-bottom: 18px">
-									<div class="details__item">
-										<div class="details__fieldset" style="display: flex; justify-content: space-between">
-											<div class="label_switch">Show or dont show number</div>
-											<label class="switch" style="margin-left: 15px">
-												<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="datails__row" style="width: 100%">
-								<div class="field" style="margin-bottom: 30px">
-									<div class="field__label">website</div>
-									<div class="field__wrap">
-										<input class="field__input" type="url" name="url" placeholder="Your site URL" required />
-									</div>
-								</div>
-							</div>
-							<div class="details__category">Social</div>
-							<div class="details__row" style="margin: 30px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
+								<div class="details_col lgn" style="width: 100%">
 									<div class="details__list">
 										<div class="details__item">
 											<div class="details__fieldset">
-												<div class="details__box">
-													<div class="field">
-														<div class="field__label">instagram</div>
-														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@instagram username" required />
-														</div>
+												<div class="field" style="margin-bottom: 30px">
+													<div class="field__label">confirm password</div>
+													<div class="field__wrap">
+														<input placeholder="*****" class="field__input" type="password" name="url" required />
 													</div>
-													<button class="button-stroke button-small details__button">Verify account</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="details__box">
-													<div class="field">
-														<div class="field__label">facebook</div>
-														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@facebook username" required />
-														</div>
-													</div>
-													<button class="button-stroke button-small details__button">Verify account</button>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="details__row" style="margin: 10px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="details__box">
-													<div class="field">
-														<div class="field__label">dribbble</div>
-														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@dribbble username" required />
-														</div>
-													</div>
-													<button class="button-stroke button-small details__button">Verify account</button>
-												</div>
-											</div>
+							<button class="button-stroke button-small" style="margin-bottom: 28px">Updated</button>
+
+							<div class="details__row" style="padding-top: 28px; border-top: 1px solid #e6e8ec; display: block; margin: 0">
+								<div class="details__col" style="margin: 0">
+									<div class="details__heading">Social accounts</div>
+								</div>
+							</div>
+							<div class="details__row" style="padding-bottom: 28px; border-bottom: 1px solid #e6e8ec; margin: 0; justify-content: space-between">
+								<div class="details__col" style="margin: 0; border: none">
+									<div style="display: flex; justify-content: space-between; align-items: center">
+										<div style="display: block">
+											<div class="details__category" style="margin-bottom: 0">Facebook</div>
+											<div class="login__sub">Not connected</div>
 										</div>
+										<button class="button-stroke button-small">Connect</button>
 									</div>
 								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="details__box">
-													<div class="field">
-														<div class="field__label">behance</div>
-														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@behance username" required />
-														</div>
-													</div>
-													<button class="button-stroke button-small details__button">Verify account</button>
-												</div>
-											</div>
+								<div class="details__col lgnsc">
+									<div style="display: flex; justify-content: space-between; align-items: center">
+										<div style="display: block">
+											<div class="details__category" style="margin-bottom: 0">Apple account</div>
+											<div class="login__sub">Not connected</div>
 										</div>
+										<button class="button-stroke button-small">Connect</button>
 									</div>
 								</div>
 							</div>
-							<div class="details__btns">
-								<button class="button details__button">Update Profile</button>
-								<a class="details__clearr" href="#">
-									<img class="tombol-clear" src="./img/Figyer Thumbsnail/silang.svg" alt="tombol silang" style="margin-right: 15px" />
-									Clear all
-								</a>
+
+							<div class="details__row" style="padding-top: 28px; border-top: 1px solid #e6e8ec; display: block; margin: 0">
+								<div class="details__col" style="margin: 0 0 16px; border: none">
+									<div class="details__heading">Privacy & Display</div>
+									<div class="login__sub">Users who can message you directly</div>
+								</div>
+								<div class="details__col lgncheck" style="margin: 0 0 16px; width: 66%">
+									<label class="checkbox" style="width: 100%">
+										<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Anyone</span></span>
+									</label>
+									<label class="checkbox" style="width: 100%">
+										<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Only people you follow</span></span>
+									</label>
+								</div>
+
+								<div class="details__col" style="margin: 0 0 16px; border: none">
+									<div class="login__sub">Users who can tag you in a comment</div>
+								</div>
+								<div class="details__col lgncheck" style="margin: 0 0 16px; width: 100%">
+									<label class="checkbox" style="width: 100%">
+										<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Anyone</span></span>
+									</label>
+									<label class="checkbox" style="width: 100%">
+										<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">Only people you follow</span></span>
+									</label>
+									<label class="checkbox" style="width: 100%">
+										<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span><span class="checkbox__text">No one</span></span>
+									</label>
+								</div>
 							</div>
 						</div>
+						<!-- end of login and security -->
+
+						<!-- notification -->
 						<div class="js-edit-item">
-							<div class="details__top">
-								<h1 class="details__title h2">Notification Setting</h1>
+							<div class="edit__top">
+								<h1 class="edit__top h2">Notification Setting</h1>
 							</div>
-							<div class="details__category">Account info</div>
-							<div class="details__row" style="flex-wrap: wrap">
-								<div class="details__col">
-									<div class="details__user">
-										<div class="details__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar" /></div>
-										<div class="details__wrap">
-											<div class="details__stage">Profile photo</div>
-											<div class="details__text">We recommend an image of at least 400x400. Gifs work too <span role="img" aria-label="hooray">🙌</span></div>
-											<div class="details__file">
-												<input class="details__input" type="file" />
-												<button class="button-stroke button-small details__button">Upload</button>
-											</div>
-										</div>
+							<div class="notification__row" style="flex-wrap: wrap">
+								<div class="notification__col1">
+									<div class="details__heading">Notification Sumarry</div>
+									<div style="display: flex; justify-content: space-between">
+										<div class="details__category" style="margin-bottom: 0">Notification Sumarry</div>
+										<label class="switch" style="margin-left: 15px">
+											<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
+										</label>
 									</div>
-								</div>
-								<div class="details__col">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="field">
-													<div class="field__label">first name</div>
-													<div class="field__wrap">
-														<input class="field__input" type="text" name="name" placeholder="Enter your first name" required />
-													</div>
-												</div>
-												<div class="field">
-													<div class="field__label">last name</div>
-													<div class="field__wrap">
-														<input class="field__input" type="text" name="url" placeholder="Enter your last name" required />
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+									<div class="notification__sub">Receive an email summary of notifications instead of individual emails</div>
 								</div>
 							</div>
-							<div class="datails__row" style="width: 100%">
-								<div class="field" style="margin-bottom: 30px">
-									<div class="field__label">email</div>
-									<div class="field__wrap">
-										<input class="field__input" type="email" name="url" placeholder="Enter your Email" required />
+							<div class="notification__row" style="flex-wrap: wrap">
+								<div class="notification__col">
+									<div class="details__heading">Network Activity</div>
+									<div style="display: flex; justify-content: space-between">
+										<div class="details__category" style="margin-bottom: 0">Email me a summary of:</div>
+										<label class="checkbox">
+											<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span></span>
+										</label>
 									</div>
+									<div class="notification__sub">New activity on projects and collection by my network</div>
 								</div>
-								<div class="field field_textarea">
-									<div class="field__label">Bio</div>
-									<div class="field__wrap">
-										<textarea style="height: 156px" class="field__textarea" name="bio" placeholder="About yourselt in a few words" required></textarea>
+							</div>
+							<div class="notification__row" style="flex-wrap: wrap">
+								<div class="notification__col">
+									<div class="details__heading">Actionable Email Notifications</div>
+									<div class="details__category">Email me immediately when someone:</div>
+									<div style="display: flex; justify-content: space-between">
+										<div class="notification__sub">Sends me a direct message</div>
+										<label class="checkbox">
+											<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span></span>
+										</label>
+									</div>
+									<div style="display: flex; justify-content: space-between; margin-top: 24px">
+										<div class="notification__sub">Publishes a project</div>
+										<label class="checkbox">
+											<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span></span>
+										</label>
 									</div>
 								</div>
 							</div>
-							<div class="details__row" style="margin: 30px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="field__label">lives in</div>
-												<div class="field__wrap">
-													<select class="select">
-														<option>Location</option>
-														<option>Manual</option>
-														<option>Digital</option>
-													</select>
-												</div>
-											</div>
-										</div>
+							<div class="notification__row" style="flex-wrap: wrap">
+								<div class="notification__col">
+									<div class="details__heading">Newsletters</div>
+									<div style="display: flex; justify-content: space-between">
+										<div class="details__category" style="margin-bottom: 0">I would like to receive:</div>
+										<label class="checkbox">
+											<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span></span>
+										</label>
 									</div>
-								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="field" style="margin-bottom: 30px">
-													<div class="field__label">city</div>
-													<div class="field__wrap">
-														<input class="field__input" type="text" name="url" required />
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+									<div class="notification__sub">Announcement and special offers</div>
 								</div>
 							</div>
-							<div class="details__row" style="margin: 30px 0 0 0; align-items: center">
-								<div class="details_col" style="width: 30%; margin-right: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="field__label">code</div>
-												<div class="field__wrap">
-													<select class="select">
-														<option>+1</option>
-														<option>Manual</option>
-														<option>Digital</option>
-													</select>
-												</div>
-											</div>
-										</div>
+							<div class="notification__row" style="flex-wrap: wrap; margin-bottom: 16px">
+								<div class="notification__col">
+									<div class="details__heading">Browser Notifications</div>
+									<div style="display: flex; justify-content: space-between">
+										<div class="details__category" style="margin-bottom: 0">Browser Notifications</div>
+										<label class="switch" style="margin-left: 15px">
+											<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
+										</label>
 									</div>
-								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="field" style="margin-bottom: 30px">
-													<div class="field__label">phone</div>
-													<div class="field__wrap">
-														<input class="field__input" type="number" name="url" required />
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="details_col" style="width: 95%; margin-left: 20px; padding-bottom: 18px">
-									<div class="details__item">
-										<div class="details__fieldset" style="display: flex; justify-content: space-between">
-											<div class="label_switch">Show or dont show number</div>
-											<label class="switch" style="margin-left: 15px">
-												<input class="switch__input" type="checkbox" checked="checked" /><span class="switch__inner"><span class="switch__box"></span></span>
-											</label>
-										</div>
-									</div>
+									<div class="notification__sub">Get notifications to stay up to date with the Figurr community.</div>
 								</div>
 							</div>
-							<div class="datails__row" style="width: 100%">
-								<div class="field" style="margin-bottom: 30px">
-									<div class="field__label">website</div>
-									<div class="field__wrap">
-										<input class="field__input" type="url" name="url" placeholder="Your site URL" required />
-									</div>
+							<div class="notification__col" style="margin: 0; border: none">
+								<div style="display: flex; justify-content: space-between">
+									<div class="details__category" style="margin-bottom: 0">Creatives You Follow</div>
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox" /><span class="checkbox__inner"><span class="checkbox__tick"></span></span>
+									</label>
 								</div>
-							</div>
-							<div class="details__category">Social</div>
-							<div class="details__row" style="margin: 30px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="details__box">
-													<div class="field">
-														<div class="field__label">instagram</div>
-														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@instagram username" required />
-														</div>
-													</div>
-													<button class="button-stroke button-small details__button">Verify account</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="details__box">
-													<div class="field">
-														<div class="field__label">facebook</div>
-														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@facebook username" required />
-														</div>
-													</div>
-													<button class="button-stroke button-small details__button">Verify account</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="details__row" style="margin: 10px 0 0 0">
-								<div class="details_col" style="width: 100%; margin-right: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="details__box">
-													<div class="field">
-														<div class="field__label">dribbble</div>
-														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@dribbble username" required />
-														</div>
-													</div>
-													<button class="button-stroke button-small details__button">Verify account</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="details_col" style="width: 100%; margin-left: 10px">
-									<div class="details__list">
-										<div class="details__item">
-											<div class="details__fieldset">
-												<div class="details__box">
-													<div class="field">
-														<div class="field__label">behance</div>
-														<div class="field__wrap">
-															<input class="field__input" type="text" name="twitter" placeholder="@behance username" required />
-														</div>
-													</div>
-													<button class="button-stroke button-small details__button">Verify account</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="details__btns">
-								<button class="button details__button">Update Profile</button>
-								<a class="details__clearr" href="#">
-									<img class="tombol-clear" src="./img/Figyer Thumbsnail/silang.svg" alt="tombol silang" style="margin-right: 15px" />
-									Clear all
-								</a>
+								<div class="notification__sub">When you turn on notifications from people you follow, you’ll get a notification directly from your browser when your favorite creators publish new work or menton you.</div>
 							</div>
 						</div>
-						<div class="js-edit-item delete">
-							<div class="details__top h2">Delete Account</div>
+						<!-- end of notification -->
+
+						<!-- delete -->
+						<div class="js-edit-item delete" style="margin-bottom: 72px">
+							<div class="edit__top h2">Delete Account</div>
 							<div class="details__row delete" style="flex-wrap: wrap">
 								<div class="details__col">
 									<div class="delete-ask">Would you like to delete your Figerr account:?</div>
@@ -872,6 +647,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- end of delete -->
 					</div>
 				</div>
 			</div>
