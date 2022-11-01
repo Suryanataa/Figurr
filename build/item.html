@@ -54,10 +54,11 @@
     </script>
     <!-- outer-->
     <div class="outer">
-      <!-- header-->
-			<header class="header js-header registered" data-id="#header">
+      <!-- header-->  
+			<header class="header js-header registered no-padding-sm" data-id="#header">
+        
 				<div class="header__center center">
-					<a class="header__logo" href="index.html"><img class="some-icon" src="./img/Figyer Thumbsnail/logo.svg" alt="Figyer" /></a>
+					<!-- <a class="header__logo" href="index.html"><img class="some-icon" src="./img/Figyer Thumbsnail/logo.svg" alt="Figyer" /></a> -->
 					<div class="header__wrapper js-header-wrapper">
 						<nav class="header__nav"><a class="header__link" href="search01.html">Discover</a><a class="header__link" href="local.html">Local Pride</a></nav>
 						<form class="header__search">
@@ -175,7 +176,15 @@
 					</div>
 					<a class="button-small header__button header__connect" href="connect-wallet.html">Sign Up</a>
 					<button class="header__burger js-header-burger"></button>
+          <div class="black-bar">
+            <a href="index.html" class="position-close">
+              <svg width="30" height="30" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                <path fill-rule="evenodd" class="icon" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#cfcfcd"/>
+                </svg>
+            </a>
+          </div>
 				</div>
+        
 			</header>
 
       <div class="container__outer">
@@ -186,7 +195,7 @@
             <div class="item__bg">
               <div class="followers__items">
                 <div class="followers__user">
-                  <div class="followers__avatar"><img src="img/content/avatar-5.jpg" alt="Avatar"></div>
+                  <div class="followers__avatar"><img src="img/Figyer Thumbsnail/Avatars/peeps-avatar-2.png" alt="Avatar"></div>
                   <div class="card__body">
                     <div class="card__line">
                     <div class="card__title">STRANGER</div>                                   
@@ -220,13 +229,13 @@
                     </button> -->
                     <div class="background-options"></div>
   
-                    <a href="index.html">
+                    <!-- <a href="index.html">
                     <button class="button-circle-close button-position-close">
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <path fill-rule="evenodd" class="icon" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#777E91"/>
                         </svg>              
                     </button> 
-                    </a>
+                    </a> -->
   
                     <button class="button-circle-stroke button-position-file">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1455,8 +1464,10 @@
           </div>
         </div>
       </div>
+
+      <div class="black-bar"></div>
       <!-- footer-->
-      <footer class="footer">
+      <!-- <footer class="footer">
         <div class="footer__center center">
           <div class="footer__row">
             <div class="footer__col">
@@ -1505,7 +1516,7 @@
             <div class="footer__note">We use cookies for better service. <a href="/#">Accept</a></div>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
     <!-- scripts-->
     <script src="js/lib/jquery.min.js"></script>
