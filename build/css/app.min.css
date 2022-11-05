@@ -4692,6 +4692,12 @@ body.dark .card__status span {
 	top: 4px;
 }
 
+@media only screen and (max-width: 767px) {
+	.hot .slick-arrow {
+		top: 60px;
+	}
+}
+
 .hot .slick-prev {
 	right: 48px;
 }
