@@ -2207,7 +2207,7 @@ body.dark .button-circle-stroke-item:hover {
 	color: rgba(119, 126, 144, 1);
 	margin-bottom: 45px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
 	.main__subtitle.h1 {
 		font-size: 64px;
 	}
@@ -3237,13 +3237,13 @@ body.dark .player__line {
 		height: 620px;
 	}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
 	.player img {
 		width: 307px;
 		height: 320px;
 	}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
 	.main__row {
 		display: block;
 	}
@@ -3282,7 +3282,7 @@ body.dark .player__line {
 		padding-bottom: 80px;
 	}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
 	.main__details {
 		margin-top: 32px;
 		margin-left: 0px;
