@@ -3233,7 +3233,7 @@ body.dark .player__line {
 }
 @media only screen and (max-width: 1023px) {
 	.player img {
-		width: 412px;
+		width: 100%;
 		height: 620px;
 	}
 }
@@ -3302,7 +3302,7 @@ body.dark .player__line {
 	.main__subtitle {
 		margin-right: 60px;
 		font-size: 48px;
-		font-weight: 700;
+		font-weight: 600;
 		font-size: 64px;
 		line-height: 64px;
 		/* or 100% */
