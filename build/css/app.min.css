@@ -3201,9 +3201,10 @@ body.dark .player__line {
 
 	color: #23262f;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
 	.main__head .main__title {
-		margin: 0 5px 0 5px;
+		margin: 0 auto;
+		width: 310px;
 		font-weight: 600;
 		font-size: 40px;
 		line-height: 48px;
@@ -3226,7 +3227,12 @@ body.dark .player__line {
 	position: relative;
 	margin: 0 -12px;
 }
-
+@media only screen and (max-width: 767px) {
+	.main__wrapper {
+		position: relative;
+		margin: 0;
+	}
+}
 .main__row {
 	display: flex;
 	align-items: flex-start;
@@ -3240,7 +3246,7 @@ body.dark .player__line {
 @media only screen and (max-width: 600px) {
 	.player img {
 		width: 307px;
-		height: 320px;
+		height: 380px;
 	}
 }
 @media only screen and (max-width: 600px) {
@@ -3616,6 +3622,15 @@ body.dark .selection__row {
 	transition: -webkit-transform 1s;
 	transition: transform 1s;
 	transition: transform 1s, -webkit-transform 1s;
+}
+@media only screen and (max-width: 767px) {
+	.selection__preview img {
+		width: 100%;
+		height: 314px;
+		transition: -webkit-transform 1s;
+		transition: transform 1s;
+		transition: transform 1s, -webkit-transform 1s;
+	}
 }
 .selection__preview:before {
 	content: "";
@@ -4690,12 +4705,6 @@ body.dark .card__status span {
 
 .hot .slick-arrow {
 	top: 4px;
-}
-
-@media only screen and (max-width: 767px) {
-	.hot .slick-arrow {
-		top: 60px;
-	}
 }
 
 .hot .slick-prev {
