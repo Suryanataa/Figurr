@@ -3288,8 +3288,9 @@ body.dark .player__line {
 		padding-bottom: 80px;
 	}
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	.main__details {
+		width: 100%;
 		margin-top: 32px;
 		margin-left: 0px;
 	}
@@ -3459,6 +3460,14 @@ body.dark .main__wrap {
 }
 .main__btns .main__button:not(:last-child) {
 	margin-bottom: 8px;
+}
+
+@media (max-width: 600px){
+	.center-index{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
 
 .main__slider {
