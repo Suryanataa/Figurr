@@ -119,7 +119,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 1023,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 				},
 			},
 			{
@@ -149,7 +149,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 1023,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 				},
 			},
 			{
@@ -179,7 +179,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 1023,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
 				},
 			},
 			{
