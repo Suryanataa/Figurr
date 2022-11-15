@@ -113,7 +113,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 1179,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 4,
 				},
 			},
 			{
@@ -124,6 +124,20 @@ $(document).ready(function () {
 			},
 			{
 				breakpoint: 767,
+				settings: {
+					slidesToShow: 3,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 425,
 				settings: {
 					slidesToShow: 2,
 					infinite: true,
@@ -143,7 +157,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 1179,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 4,
 				},
 			},
 			{
@@ -154,6 +168,20 @@ $(document).ready(function () {
 			},
 			{
 				breakpoint: 767,
+				settings: {
+					slidesToShow: 3,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 425,
 				settings: {
 					slidesToShow: 2,
 					infinite: true,
@@ -173,7 +201,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 1179,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 4,
 				},
 			},
 			{
@@ -184,6 +212,20 @@ $(document).ready(function () {
 			},
 			{
 				breakpoint: 767,
+				settings: {
+					slidesToShow: 3,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 425,
 				settings: {
 					slidesToShow: 2,
 					infinite: true,

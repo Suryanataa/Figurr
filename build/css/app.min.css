@@ -3635,7 +3635,25 @@ body.dark .selection__row {
 @media only screen and (max-width: 767px) {
 	.selection__preview img {
 		width: 100%;
-		height: 314px;
+		height: 630px;
+		transition: -webkit-transform 1s;
+		transition: transform 1s;
+		transition: transform 1s, -webkit-transform 1s;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.selection__preview img {
+		width: 100%;
+		height: 500px;
+		transition: -webkit-transform 1s;
+		transition: transform 1s;
+		transition: transform 1s, -webkit-transform 1s;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.selection__preview img {
+		width: 100%;
+		height: 350px;
 		transition: -webkit-transform 1s;
 		transition: transform 1s;
 		transition: transform 1s, -webkit-transform 1s;
@@ -4695,6 +4713,25 @@ body.dark .card__status span {
 	}
 }
 
+@media only screen and (max-width: 650px){
+	.hot .card{
+		width: 300px;
+		margin-right: 0;
+	}
+	.hot .card .card__preview{
+		height: 380px
+	}
+}
+@media only screen and (max-width: 425px){
+	.hot .card{
+		width: 250px;
+		margin-right: 0;
+	}
+	.hot .card .card__preview{
+		height: 300px
+	}
+}
+
 .hot__slider {
 	position: static;
 	visibility: hidden;
@@ -4784,6 +4821,19 @@ body.dark .card__status span {
 	flex: 0 0 calc(33.333% - 8px);
 	width: calc(33.333% - 8px);
 	margin: 8px 4px 0;
+}
+@media (max-width: 1179px){
+	.collections__preview img{
+		height: 370px;
+	}
+}
+@media (min-width: 500px) and (max-width:767px){
+	.collections__preview {
+		flex: 0 0 calc(33.333% - 8px);
+		width: calc(33.333% - 8px);
+		height: 500px;
+		margin: 8px 4px 0;
+	}
 }
 .collections__preview:first-child {
 	flex: 0 0 calc(100% - 8px);
