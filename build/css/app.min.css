@@ -4818,20 +4818,18 @@ body.dark .card__status span {
 }
 
 .collections__preview {
-	flex: 0 0 calc(33.333% - 8px);
+	flex: 0 1 calc(33.333% - 8px);
 	width: calc(33.333% - 8px);
 	margin: 8px 4px 0;
 }
-@media (max-width: 1179px){
-	.collections__preview img{
-		height: 370px;
+@media only screen and(max-width: 1179px){
+	.img-hot-collections{
+		height: 370px !important;
 	}
+	
 }
 @media (min-width: 500px) and (max-width:767px){
 	.collections__preview {
-		flex: 0 0 calc(33.333% - 8px);
-		width: calc(33.333% - 8px);
-		height: 500px;
 		margin: 8px 4px 0;
 	}
 }
