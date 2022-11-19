@@ -3249,7 +3249,7 @@ body.dark .player__line {
 		height: 380px;
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
 	.main__row {
 		display: block;
 	}
@@ -3288,11 +3288,11 @@ body.dark .player__line {
 		padding-bottom: 80px;
 	}
 }
-@media (max-width: 600px) {
+@media (max-width: 760px) {
 	.main__details {
-		width: 100%;
-		margin-top: 32px;
-		margin-left: 0px;
+		width: 100% !important;
+		margin-top: 32px !important;
+		margin-left: 0px !important;
 	}
 }
 
@@ -3308,6 +3308,18 @@ body.dark .player__line {
 @media only screen and (max-width: 1179px) {
 	.main__subtitle {
 		margin-right: 60px;
+		font-size: 48px;
+		font-weight: 600;
+		font-size: 64px;
+		line-height: 64px;
+		/* or 100% */
+
+		letter-spacing: -0.02em;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.main__subtitle {
+		margin-right: 40px;
 		font-size: 48px;
 		font-weight: 600;
 		font-size: 64px;
@@ -3462,8 +3474,8 @@ body.dark .main__wrap {
 	margin-bottom: 8px;
 }
 
-@media (max-width: 600px){
-	.center-index{
+@media (max-width: 600px) {
+	.center-index {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -4693,42 +4705,41 @@ body.dark .card__status span {
 	height: 100%;
 }
 
-
-@media only screen and (max-width: 1023px){
-	.hot .card{
+@media only screen and (max-width: 1023px) {
+	.hot .card {
 		width: 250px;
 	}
-	.hot .card .card__preview{
+	.hot .card .card__preview {
 		height: 300px;
 	}
 }
 
-@media only screen and (max-width: 767px){
-	.hot .card{
+@media only screen and (max-width: 767px) {
+	.hot .card {
 		width: 250px;
 		margin-right: 0;
 	}
-	.hot .card .card__preview{
-		height: 300px
+	.hot .card .card__preview {
+		height: 300px;
 	}
 }
 
-@media only screen and (max-width: 650px){
-	.hot .card{
+@media only screen and (max-width: 650px) {
+	.hot .card {
 		width: 300px;
 		margin-right: 0;
 	}
-	.hot .card .card__preview{
-		height: 380px
+	.hot .card .card__preview {
+		height: 380px;
 	}
 }
-@media only screen and (max-width: 425px){
-	.hot .card{
+@media only screen and (max-width: 425px) {
+	.hot .card {
 		width: 250px;
 		margin-right: 0;
 	}
-	.hot .card .card__preview{
-		height: 300px
+	.hot .card .card__preview {
+		height: 300px;
 	}
 }
 
@@ -4822,11 +4833,11 @@ body.dark .card__status span {
 	width: calc(33.333% - 8px);
 	margin: 8px 4px 0;
 }
-.collections-header{
+.collections-header {
 	height: 450px !important;
 }
-@media (min-width: 500px) and (max-width:767px){
-	.collections-header{
+@media (min-width: 500px) and (max-width: 767px) {
+	.collections-header {
 		height: 700px !important;
 	}
 }
@@ -5215,7 +5226,7 @@ body.dark .discover__filters {
 		flex: 0 0 calc(50% - 32px);
 		max-width: calc(50% - 32px);
 	}
-	.discover .card__preview{
+	.discover .card__preview {
 		height: 450px;
 	}
 }
@@ -5224,11 +5235,10 @@ body.dark .discover__filters {
 		max-width: 100%;
 		margin: 0;
 	}
-	.discover .card__preview{
+	.discover .card__preview {
 		height: 680px;
 	}
-	.discover .discover__list{
-		
+	.discover .discover__list {
 		display: flex;
 		justify-content: center;
 		margin-right: 0;
@@ -5240,11 +5250,10 @@ body.dark .discover__filters {
 		max-width: 550px;
 		margin: 0;
 	}
-	.discover .card__preview{
+	.discover .card__preview {
 		height: 450px;
 	}
-	.discover .discover__list{
-		
+	.discover .discover__list {
 		display: flex;
 		justify-content: center;
 		margin-left: 1%;
@@ -9221,7 +9230,7 @@ body.dark .profile__btns .profile__button:hover {
 }
 @media only screen and (max-width: 767px) {
 	.edit__center.center {
-		padding: 0 40px;
+		padding: 0 40px !important;
 	}
 }
 @media only screen and (max-width: 1023px) {
@@ -9453,7 +9462,7 @@ body.dark .profiles__link.active {
 		width: calc(50% - 32px);
 		margin: 32px 16px 0;
 	}
-	.profile .card .card__preview{
+	.profile .card .card__preview {
 		height: 400px;
 	}
 }
@@ -9463,7 +9472,7 @@ body.dark .profiles__link.active {
 		width: calc(50% - 32px);
 		margin: 32px 16px 0;
 	}
-	.profile .card .card__preview{
+	.profile .card .card__preview {
 		height: 450px;
 	}
 }
@@ -9475,7 +9484,7 @@ body.dark .profiles__link.active {
 	.profile .card:not(:last-child) {
 		margin-bottom: 32px;
 	}
-	.profile .card .card__preview{
+	.profile .card .card__preview {
 		height: 750px;
 	}
 }
@@ -9487,7 +9496,7 @@ body.dark .profiles__link.active {
 	.profile .card:not(:last-child) {
 		margin-bottom: 32px;
 	}
-	.profile .card .card__preview{
+	.profile .card .card__preview {
 		height: 400px;
 	}
 }
